@@ -1,9 +1,12 @@
 package com.belajar.drakor
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -22,6 +25,21 @@ class DramaListFragment : Fragment(), OnItemClickListener {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.adapter = DramaAdapter(getDramaList(), this)
         return view
+    }
+
+//    override fun onItemClick(drama: Drama) {
+//        val intent = Intent(requireContext(), DramaDetailFragment::class.java)
+//        intent.putExtra("DRAMA_TITLE", drama.title)
+//        intent.putExtra("DRAMA_IMAGE_URL", drama.imageUrl)
+//        startActivity(intent)
+//    }
+
+    override fun onItemClick(drama: Drama) {
+        val detailFragment = DramaDetailFragment.newInstance(drama)
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.nav_host_fragment, detailFragment)
+            .addToBackStack(null)
+            .commit()
     }
 
     private fun getDramaList(): List<Drama> {
@@ -46,13 +64,4 @@ class DramaListFragment : Fragment(), OnItemClickListener {
                 "https://i.pinimg.com/736x/4b/4a/3a/4b4a3aab3d560140167cd35891fd8c93.jpg")
         )
     }
-
-    override fun onItemClick(drama: Drama) {
-        val detailFragment = DramaDetailFragment.newInstance(drama)
-        requireActivity().supportFragmentManager.beginTransaction()
-            .replace(R.id.container, detailFragment)
-            .addToBackStack(null)
-            .commit()
-    }
 }
-
