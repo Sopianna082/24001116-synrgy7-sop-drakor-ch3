@@ -50,7 +50,7 @@ class DramaListFragment : Fragment(), OnItemClickListener {
     override fun onItemClick(drama: Drama) {
         val detailFragment = DramaDetailFragment.newInstance(drama)
         requireActivity().supportFragmentManager.beginTransaction()
-            .replace(R.id.container, detailFragment)
+            .replace(R.id.nav_host_fragment, detailFragment)
             .addToBackStack(null)
             .commit()
     }

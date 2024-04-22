@@ -2,26 +2,48 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/dramaListFragment">
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.belajar.drakor.DramaListFragment"
+        android:label="Home Fragment">
+
+        <action
+            android:id="@+id/action_homeFragment_to_dramaListFragment"
+            app:destination="@id/dramaListFragment" />
+
+        <!-- Tambahkan action untuk navigasi ke SearchFragment -->
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.belajar.drakor.SearchFragment"
+        android:label="Search Fragment" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.belajar.drakor.ProfileFragment"
+        android:label="Profile Fragment" />
 
     <fragment
         android:id="@+id/dramaListFragment"
         android:name="com.belajar.drakor.DramaListFragment"
         android:label="Drama List Fragment">
+
         <action
             android:id="@+id/action_dramaListFragment_to_dramaDetailFragment"
             app:destination="@id/dramaDetailFragment" />
+
     </fragment>
 
     <fragment
         android:id="@+id/dramaDetailFragment"
         android:name="com.belajar.drakor.DramaDetailFragment"
         android:label="Drama Detail Fragment" />
-
-    <!-- Tambahkan tujuan untuk halaman pencarian -->
-    <fragment
-        android:id="@+id/searchFragment"
-        android:name="com.belajar.drakor.SearchFragment"
-        android:label="Search Fragment" />
 
 </navigation>

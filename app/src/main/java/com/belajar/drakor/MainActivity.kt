@@ -2,10 +2,10 @@ package com.belajar.drakor
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,24 +16,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.container) as NavHostFragment
-        val navController = navHostFragment.navController
+        // Inisialisasi NavHostFragment
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        navController = navHostFragment.navController
 
-        // Setup bottom navigation with NavController
+        // Inisialisasi BottomNavigationView
+        bottomNavigationView = findViewById(R.id.bottomNavigationView)
+
+        // Hubungkan BottomNavigationView dengan NavController
         bottomNavigationView.setupWithNavController(navController)
-
-        // Handle navigation for search menu item
-        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.searchFragment -> {
-                    navController.navigate(R.id.searchFragment)
-                    true
-                }
-                else -> false
-            }
-        }
     }
-
 }
-
