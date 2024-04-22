@@ -10,13 +10,8 @@
         android:label="Home Fragment">
 
         <action
-            android:id="@+id/action_homeFragment_to_dramaListFragment"
-            app:destination="@id/dramaListFragment" />
-
-        <!-- Tambahkan action untuk navigasi ke SearchFragment -->
-        <action
-            android:id="@+id/action_homeFragment_to_searchFragment"
-            app:destination="@id/searchFragment" />
+            android:id="@+id/action_homeFragment_to_dramaDetailFragment"
+            app:destination="@id/dramaDetailFragment" />
 
     </fragment>
 
@@ -33,17 +28,15 @@
     <fragment
         android:id="@+id/dramaListFragment"
         android:name="com.belajar.drakor.DramaListFragment"
-        android:label="Drama List Fragment">
-
-        <action
-            android:id="@+id/action_dramaListFragment_to_dramaDetailFragment"
-            app:destination="@id/dramaDetailFragment" />
-
-    </fragment>
+        android:label="Drama List Fragment" />
 
     <fragment
         android:id="@+id/dramaDetailFragment"
         android:name="com.belajar.drakor.DramaDetailFragment"
         android:label="Drama Detail Fragment" />
+
+    <action
+        android:id="@+id/action_dramaListFragment_to_dramaDetailFragment"
+        app:destination="@id/dramaDetailFragment" />
 
 </navigation>
