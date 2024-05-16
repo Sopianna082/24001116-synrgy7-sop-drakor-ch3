@@ -1,4 +1,4 @@
-package com.belajar.drakor
+package com.belajar.drakor.activity.drama
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,12 +7,16 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.belajar.drakor.R
+import com.belajar.drakor.activity.drama.adapter.DramaAdapter
 
 class DramaDetailFragment : Fragment() {
 
     companion object {
-        private const val ARG_DRAMA = "arg_drama"
+        const val ARG_DRAMA = "arg_drama"
 
         fun newInstance(drama: Drama): DramaDetailFragment {
             val fragment = DramaDetailFragment()

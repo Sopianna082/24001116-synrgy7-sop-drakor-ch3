@@ -1,4 +1,4 @@
-package com.belajar.drakor
+package com.belajar.drakor.activity.drama
 
 import android.os.Parcel
 import android.os.Parcelable

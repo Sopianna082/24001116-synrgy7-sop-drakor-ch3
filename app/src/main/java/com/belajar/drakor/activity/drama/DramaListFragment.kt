@@ -1,15 +1,16 @@
-package com.belajar.drakor
+package com.belajar.drakor.activity.drama
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.belajar.drakor.R
+import com.belajar.drakor.activity.drama.adapter.DramaAdapter
+import com.belajar.drakor.activity.drama.adapter.OnItemClickListener
 
 class DramaListFragment : Fragment(), OnItemClickListener {
 
@@ -23,23 +24,16 @@ class DramaListFragment : Fragment(), OnItemClickListener {
         val view = inflater.inflate(R.layout.fragment_drama_list, container, false)
         recyclerView = view.findViewById(R.id.recyclerViewDramaList)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        recyclerView.adapter = DramaAdapter(getDramaList(), this)
+        val dramaAdapter = DramaAdapter(getDramaList(), this) // Pass the drama list and click listener
+        recyclerView.adapter = dramaAdapter
         return view
     }
 
-//    override fun onItemClick(drama: Drama) {
-//        val intent = Intent(requireContext(), DramaDetailFragment::class.java)
-//        intent.putExtra("DRAMA_TITLE", drama.title)
-//        intent.putExtra("DRAMA_IMAGE_URL", drama.imageUrl)
-//        startActivity(intent)
-//    }
-
     override fun onItemClick(drama: Drama) {
-        val detailFragment = DramaDetailFragment.newInstance(drama)
-        requireActivity().supportFragmentManager.beginTransaction()
-            .replace(R.id.nav_host_fragment, detailFragment)
-            .addToBackStack(null)
-            .commit()
+        val intent = Intent(requireContext(), DetailActivity::class.java).apply {
+            putExtra(DetailActivity.EXTRA_DRAMA, drama)
+        }
+        startActivity(intent)
     }
 
     private fun getDramaList(): List<Drama> {

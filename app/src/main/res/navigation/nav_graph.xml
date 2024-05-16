@@ -6,13 +6,11 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.belajar.drakor.DramaListFragment"
+        android:name="com.belajar.drakor.activity.drama.DramaListFragment"
         android:label="Home Fragment">
-
         <action
-            android:id="@+id/action_homeFragment_to_dramaDetailFragment"
-            app:destination="@id/dramaDetailFragment" />
-
+            android:id="@+id/action_homeFragment_to_dramaListFragment"
+            app:destination="@id/dramaListFragment" />
     </fragment>
 
     <fragment
@@ -27,12 +25,12 @@
 
     <fragment
         android:id="@+id/dramaListFragment"
-        android:name="com.belajar.drakor.DramaListFragment"
-        android:label="Drama List Fragment" />
+        android:name="com.belajar.drakor.activity.drama.DramaListFragment"
+        android:label="DramaListFragment" />
 
     <fragment
         android:id="@+id/dramaDetailFragment"
-        android:name="com.belajar.drakor.DramaDetailFragment"
+        android:name="com.belajar.drakor.activity.drama.DramaDetailFragment"
         android:label="Drama Detail Fragment" />
 
     <action

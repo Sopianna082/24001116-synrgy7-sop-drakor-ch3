@@ -1,4 +1,4 @@
-package com.belajar.drakor
+package com.belajar.drakor.activity.drama.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.belajar.drakor.R
+import com.belajar.drakor.activity.drama.Drama
 
 interface OnItemClickListener {
     fun onItemClick(drama: Drama)
