@@ -36,10 +36,6 @@ class DramaListFragment : Fragment(), OnItemClickListener {
         startActivity(intent)
     }
 
-    override fun onFavoriteClick(drama: Drama) {
-        TODO("Not yet implemented")
-    }
-
     private fun getDramaList(): List<Drama> {
         return listOf(
             Drama("Crash Landing on You",

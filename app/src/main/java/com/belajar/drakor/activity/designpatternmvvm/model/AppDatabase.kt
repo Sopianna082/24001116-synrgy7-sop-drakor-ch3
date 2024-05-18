@@ -1,4 +1,4 @@
-package com.belajar.drakor.activity.data
+package com.belajar.drakor.activity.designpatternmvvm.model
 
 import android.content.Context
 import androidx.room.Database

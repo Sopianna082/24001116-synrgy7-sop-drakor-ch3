@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/homeFragment">
 
@@ -26,7 +27,8 @@
     <fragment
         android:id="@+id/dramaListFragment"
         android:name="com.belajar.drakor.activity.drama.DramaListFragment"
-        android:label="DramaListFragment" >
+        android:label="Drama List"
+        tools:layout="@layout/fragment_drama_list">
         <action
             android:id="@+id/action_dramaListFragment_to_dramaDetailFragment"
             app:destination="@id/dramaDetailFragment" />
@@ -35,7 +37,17 @@
     <fragment
         android:id="@+id/dramaDetailFragment"
         android:name="com.belajar.drakor.activity.drama.DramaDetailFragment"
-        android:label="Drama Detail Fragment" />
+        android:label="Drama Detail"
+        tools:layout="@layout/fragment_detail_drama">
+        <argument
+            android:name="drama"
+            app:argType="com.belajar.drakor.activity.drama.Drama" />
+    </fragment>
+
+<!--    <fragment-->
+<!--        android:id="@+id/dramaDetailFragment"-->
+<!--        android:name="com.belajar.drakor.activity.drama.DramaDetailFragment"-->
+<!--        android:label="Drama Detail Fragment" />-->
 
 <!--    <action-->
 <!--        android:id="@+id/action_dramaListFragment_to_dramaDetailFragment"-->

@@ -31,7 +31,7 @@
 //        binding.viewModel = viewModel
 //        binding.lifecycleOwner = this
 //
-//        dramaAdapter = DramaAdapter(emptyList(), this)
+//        dramaAdapter = DramaAdapter(this)
 //        binding.recyclerViewFavoriteList.apply {
 //            layoutManager = LinearLayoutManager(context)
 //            adapter = dramaAdapter

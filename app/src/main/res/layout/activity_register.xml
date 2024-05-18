@@ -6,7 +6,7 @@
 
         <variable
             name="viewModel"
-            type="com.belajar.drakor.activity.login.AuthViewModel" />
+            type="com.belajar.drakor.activity.designpatternmvvm.viewmodel.AuthViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

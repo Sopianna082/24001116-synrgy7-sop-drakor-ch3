@@ -1,11 +1,11 @@
-package com.belajar.drakor.activity.login
+package com.belajar.drakor.activity.designpatternmvvm.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.belajar.drakor.activity.data.User
-import com.belajar.drakor.activity.data.UserRepository
+import com.belajar.drakor.activity.designpatternmvvm.model.User
+import com.belajar.drakor.activity.designpatternmvvm.model.UserRepository
 import kotlinx.coroutines.launch
 
 class AuthViewModel(private val userRepository: UserRepository) : ViewModel() {

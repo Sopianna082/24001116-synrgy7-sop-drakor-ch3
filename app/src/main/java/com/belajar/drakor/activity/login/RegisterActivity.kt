@@ -1,6 +1,5 @@
 package com.belajar.drakor.activity.login
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
@@ -9,8 +8,10 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.room.Room
 import com.belajar.drakor.R
-import com.belajar.drakor.activity.data.AppDatabase
-import com.belajar.drakor.activity.data.UserRepository
+import com.belajar.drakor.activity.designpatternmvvm.model.AppDatabase
+import com.belajar.drakor.activity.designpatternmvvm.model.UserRepository
+import com.belajar.drakor.activity.designpatternmvvm.view.LoginActivity
+import com.belajar.drakor.activity.designpatternmvvm.viewmodel.AuthViewModel
 import com.belajar.drakor.databinding.ActivityRegisterBinding
 
 class RegisterActivity : AppCompatActivity() {

@@ -9,11 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.belajar.drakor.R
 import com.belajar.drakor.activity.drama.Drama
-import com.google.android.material.button.MaterialButton
 
 interface OnItemClickListener {
     fun onItemClick(drama: Drama)
-    fun onFavoriteClick(drama: Drama)
 }
 
 class DramaAdapter(private val dramaList: List<Drama>, private val listener: OnItemClickListener) :
@@ -46,7 +44,6 @@ class DramaAdapter(private val dramaList: List<Drama>, private val listener: OnI
 
         private val imageViewPoster: ImageView = itemView.findViewById(R.id.imageViewPoster)
         private val textViewTitle: TextView = itemView.findViewById(R.id.textViewTitle)
-        private val buttonFavorite: MaterialButton = itemView.findViewById(R.id.button_favorite)
 
         fun bind(drama: Drama) {
             // Set the title
@@ -62,18 +59,6 @@ class DramaAdapter(private val dramaList: List<Drama>, private val listener: OnI
             itemView.setOnClickListener {
                 listener.onItemClick(drama)
             }
-
-            updateButton(drama)
-
-            buttonFavorite.setOnClickListener{
-                drama.isFavorite = !drama.isFavorite
-                updateButton(drama)
-                listener.onFavoriteClick(drama)
-            }
-        }
-
-        private fun updateButton(drama: Drama) {
-            buttonFavorite.text = if (drama.isFavorite) "Delete from Favorite" else "Add to Favorite"
         }
     }
 }

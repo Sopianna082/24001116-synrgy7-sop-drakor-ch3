@@ -1,4 +1,4 @@
-package com.belajar.drakor.activity.login
+package com.belajar.drakor.activity.designpatternmvvm.view
 
 import android.content.Context
 import android.content.Intent
@@ -10,9 +10,11 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.room.Room
 import com.belajar.drakor.R
-import com.belajar.drakor.activity.data.AppDatabase
-import com.belajar.drakor.activity.data.UserRepository
-import com.belajar.drakor.activity.home.HomeActivity
+import com.belajar.drakor.activity.designpatternmvvm.model.AppDatabase
+import com.belajar.drakor.activity.designpatternmvvm.model.UserRepository
+import com.belajar.drakor.activity.designpatternmvvm.viewmodel.AuthViewModel
+import com.belajar.drakor.activity.login.AuthViewModelFactory
+import com.belajar.drakor.activity.login.RegisterActivity
 import com.belajar.drakor.activity.main.MainActivity
 import com.belajar.drakor.databinding.ActivityLoginBinding
 

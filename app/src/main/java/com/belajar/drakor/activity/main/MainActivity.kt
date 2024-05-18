@@ -8,8 +8,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.belajar.drakor.R
 import com.belajar.drakor.activity.home.HomeActivity
-import com.belajar.drakor.activity.home.NavActivity
-import com.belajar.drakor.activity.login.LoginActivity
+import com.belajar.drakor.activity.designpatternmvvm.view.LoginActivity
 
 class MainActivity : AppCompatActivity() {
 

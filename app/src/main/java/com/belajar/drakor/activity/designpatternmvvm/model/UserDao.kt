@@ -1,8 +1,9 @@
-package com.belajar.drakor.activity.data
+package com.belajar.drakor.activity.designpatternmvvm.model
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
+import com.belajar.drakor.activity.designpatternmvvm.model.User
 
 @Dao
 interface UserDao {

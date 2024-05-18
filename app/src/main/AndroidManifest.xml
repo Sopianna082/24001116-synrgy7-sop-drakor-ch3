@@ -28,7 +28,7 @@
         <activity android:name=".activity.drama.DetailActivity" android:label="Detail Activity"/>
         <activity android:name=".activity.home.NavActivity" android:label="Nav Activity"/>
         <activity android:name=".activity.home.HomeActivity" android:label="Home Activity"/>
-        <activity android:name=".activity.login.LoginActivity" android:label="Login Activity"/>
+        <activity android:name=".activity.designpatternmvvm.view.LoginActivity" android:label="Login Activity"/>
         <activity android:name=".activity.login.RegisterActivity" android:label="Register Activity" />
     </application>
 
