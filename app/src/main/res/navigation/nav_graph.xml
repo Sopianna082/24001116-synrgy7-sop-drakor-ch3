@@ -26,15 +26,19 @@
     <fragment
         android:id="@+id/dramaListFragment"
         android:name="com.belajar.drakor.activity.drama.DramaListFragment"
-        android:label="DramaListFragment" />
+        android:label="DramaListFragment" >
+        <action
+            android:id="@+id/action_dramaListFragment_to_dramaDetailFragment"
+            app:destination="@id/dramaDetailFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/dramaDetailFragment"
         android:name="com.belajar.drakor.activity.drama.DramaDetailFragment"
         android:label="Drama Detail Fragment" />
 
-    <action
-        android:id="@+id/action_dramaListFragment_to_dramaDetailFragment"
-        app:destination="@id/dramaDetailFragment" />
+<!--    <action-->
+<!--        android:id="@+id/action_dramaListFragment_to_dramaDetailFragment"-->
+<!--        app:destination="@id/dramaDetailFragment" />-->
 
 </navigation>

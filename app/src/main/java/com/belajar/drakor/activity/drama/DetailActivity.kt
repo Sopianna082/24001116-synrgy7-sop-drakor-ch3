@@ -1,6 +1,7 @@
 package com.belajar.drakor.activity.drama
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.belajar.drakor.R
 
@@ -16,8 +17,7 @@ class DetailActivity : AppCompatActivity() {
                 .replace(R.id.containerFragmentDetail, DramaDetailFragment.newInstance(drama))
                 .commit()
         } else {
-            // Handle the case where Drama object is not passed correctly
-            // or handle the error accordingly
+            Log.e("DetailActivity", "DramaDetailFragment not found or invalid")
         }
     }
 

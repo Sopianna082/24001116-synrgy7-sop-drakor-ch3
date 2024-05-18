@@ -1,4 +1,4 @@
-package com.belajar.drakor.activity.drama
+package com.belajar.drakor.activity.home
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
