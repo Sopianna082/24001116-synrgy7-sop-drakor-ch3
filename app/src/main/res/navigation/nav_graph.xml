@@ -17,12 +17,20 @@
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.belajar.drakor.SearchFragment"
-        android:label="Search Fragment" />
+        android:label="Search Fragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.belajar.drakor.ProfileFragment"
-        android:label="Profile Fragment" />
+        android:label="Profile Fragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/dramaListFragment"
@@ -44,13 +52,80 @@
             app:argType="com.belajar.drakor.activity.drama.Drama" />
     </fragment>
 
+    <!--    <fragment-->
+    <!--        android:id="@+id/dramaDetailFragment"-->
+    <!--        android:name="com.belajar.drakor.activity.drama.DramaDetailFragment"-->
+    <!--        android:label="Drama Detail Fragment" />-->
+
+    <!--    <action-->
+    <!--        android:id="@+id/action_dramaListFragment_to_dramaDetailFragment"-->
+    <!--        app:destination="@id/dramaDetailFragment" />-->
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.belajar.drakor.activity.user.UserFragment"
+        android:label="User Fragment" >
+        <action
+            android:id="@+id/action_userFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+</navigation>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<navigation xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/nav_graph"-->
+<!--    app:startDestination="@id/homeFragment">-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/homeFragment"-->
+<!--        android:name="com.belajar.drakor.activity.drama.DramaListFragment"-->
+<!--        android:label="Home Fragment">-->
+<!--        <action-->
+<!--            android:id="@+id/action_homeFragment_to_dramaListFragment"-->
+<!--            app:destination="@id/dramaListFragment" />-->
+<!--    </fragment>-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/searchFragment"-->
+<!--        android:name="com.belajar.drakor.SearchFragment"-->
+<!--        android:label="Search Fragment" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/profileFragment"-->
+<!--        android:name="com.belajar.drakor.ProfileFragment"-->
+<!--        android:label="Profile Fragment" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/dramaListFragment"-->
+<!--        android:name="com.belajar.drakor.activity.drama.DramaListFragment"-->
+<!--        android:label="Drama List"-->
+<!--        tools:layout="@layout/fragment_drama_list">-->
+<!--        <action-->
+<!--            android:id="@+id/action_dramaListFragment_to_dramaDetailFragment"-->
+<!--            app:destination="@id/dramaDetailFragment" />-->
+<!--    </fragment>-->
+
 <!--    <fragment-->
 <!--        android:id="@+id/dramaDetailFragment"-->
 <!--        android:name="com.belajar.drakor.activity.drama.DramaDetailFragment"-->
-<!--        android:label="Drama Detail Fragment" />-->
+<!--        android:label="Drama Detail"-->
+<!--        tools:layout="@layout/fragment_detail_drama">-->
+<!--        <argument-->
+<!--            android:name="drama"-->
+<!--            app:argType="com.belajar.drakor.activity.drama.Drama" />-->
+<!--    </fragment>-->
 
-<!--    <action-->
-<!--        android:id="@+id/action_dramaListFragment_to_dramaDetailFragment"-->
-<!--        app:destination="@id/dramaDetailFragment" />-->
+<!--&lt;!&ndash;    <fragment&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/dramaDetailFragment"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:name="com.belajar.drakor.activity.drama.DramaDetailFragment"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:label="Drama Detail Fragment" />&ndash;&gt;-->
 
-</navigation>
+<!--&lt;!&ndash;    <action&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/action_dramaListFragment_to_dramaDetailFragment"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:destination="@id/dramaDetailFragment" />&ndash;&gt;-->
+
+<!--</navigation>-->

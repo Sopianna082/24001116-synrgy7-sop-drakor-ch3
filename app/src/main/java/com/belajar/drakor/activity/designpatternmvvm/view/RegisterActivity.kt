@@ -1,4 +1,4 @@
-package com.belajar.drakor.activity.login
+package com.belajar.drakor.activity.designpatternmvvm.view
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,8 +10,8 @@ import androidx.room.Room
 import com.belajar.drakor.R
 import com.belajar.drakor.activity.designpatternmvvm.model.AppDatabase
 import com.belajar.drakor.activity.designpatternmvvm.model.UserRepository
-import com.belajar.drakor.activity.designpatternmvvm.view.LoginActivity
 import com.belajar.drakor.activity.designpatternmvvm.viewmodel.AuthViewModel
+import com.belajar.drakor.activity.designpatternmvvm.viewmodel.AuthViewModelFactory
 import com.belajar.drakor.databinding.ActivityRegisterBinding
 
 class RegisterActivity : AppCompatActivity() {

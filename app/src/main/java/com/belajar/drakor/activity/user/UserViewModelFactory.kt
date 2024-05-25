@@ -1,15 +1,14 @@
-package com.belajar.drakor.activity.login
+package com.belajar.drakor.activity.user
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.belajar.drakor.activity.designpatternmvvm.model.UserRepository
-import com.belajar.drakor.activity.designpatternmvvm.viewmodel.AuthViewModel
 
-class AuthViewModelFactory(private val userRepository: UserRepository) : ViewModelProvider.Factory {
+class UserViewModelFactory(private val repository: UserRepository) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(AuthViewModel::class.java)) {
+        if (modelClass.isAssignableFrom(UserViewModel::class.java)) {
             @Suppress("UNCHECKED_CAST")
-            return AuthViewModel(userRepository) as T
+            return UserViewModel(repository) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class")
     }

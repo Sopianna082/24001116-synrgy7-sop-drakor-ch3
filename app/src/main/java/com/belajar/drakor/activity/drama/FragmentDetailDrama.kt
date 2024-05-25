@@ -19,11 +19,11 @@ class FragmentDetailDrama : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_detail_drama, container, false)
 
-        // Initialize the button
-        buttonFavorite = view.findViewById(R.id.button_favorite)
-        buttonFavorite.setOnClickListener {
-            // Handle favorite button click
-        }
+//        // Initialize the button
+//        buttonFavorite = view.findViewById(R.id.button_favorite)
+//        buttonFavorite.setOnClickListener {
+//            // Handle favorite button click
+//        }
 
         return view
     }

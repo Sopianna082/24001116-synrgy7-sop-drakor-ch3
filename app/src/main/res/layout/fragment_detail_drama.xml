@@ -32,14 +32,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewPosterDetail" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_favorite"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="Add To Favorite"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitleDetail"
-        tools:layout_editor_absoluteX="16dp" />
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/button_favorite"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:text="Add To Favorite"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textViewTitleDetail"-->
+<!--        tools:layout_editor_absoluteX="16dp" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

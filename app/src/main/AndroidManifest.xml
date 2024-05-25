@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".activity.MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -29,8 +30,10 @@
         <activity android:name=".activity.home.NavActivity" android:label="Nav Activity"/>
         <activity android:name=".activity.home.HomeActivity" android:label="Home Activity"/>
         <activity android:name=".activity.designpatternmvvm.view.LoginActivity" android:label="Login Activity"/>
-        <activity android:name=".activity.login.RegisterActivity" android:label="Register Activity" />
+        <activity android:name=".activity.designpatternmvvm.view.RegisterActivity" android:label="Register Activity" />
+        <activity android:name=".activity.user.UserActivity" android:label="User Activity" />
     </application>
+
 
 <!--    Izin untuk penggunaan internet-->
     <uses-permission android:name="android.permission.INTERNET" />

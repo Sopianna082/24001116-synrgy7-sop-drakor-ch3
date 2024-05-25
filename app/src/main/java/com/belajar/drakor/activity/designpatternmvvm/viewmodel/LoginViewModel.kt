@@ -1,4 +1,4 @@
-package com.belajar.drakor.activity.login
+package com.belajar.drakor.activity.designpatternmvvm.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

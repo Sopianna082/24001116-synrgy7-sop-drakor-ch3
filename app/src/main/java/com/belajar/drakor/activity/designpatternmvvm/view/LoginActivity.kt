@@ -13,8 +13,7 @@ import com.belajar.drakor.R
 import com.belajar.drakor.activity.designpatternmvvm.model.AppDatabase
 import com.belajar.drakor.activity.designpatternmvvm.model.UserRepository
 import com.belajar.drakor.activity.designpatternmvvm.viewmodel.AuthViewModel
-import com.belajar.drakor.activity.login.AuthViewModelFactory
-import com.belajar.drakor.activity.login.RegisterActivity
+import com.belajar.drakor.activity.designpatternmvvm.viewmodel.AuthViewModelFactory
 import com.belajar.drakor.activity.main.MainActivity
 import com.belajar.drakor.databinding.ActivityLoginBinding
 
