@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import androidx.room.Room
 import com.belajar.drakor.R
 import com.belajar.drakor.activity.designpatternmvvm.model.AppDatabase
@@ -16,17 +17,21 @@ import com.belajar.drakor.activity.designpatternmvvm.viewmodel.AuthViewModel
 import com.belajar.drakor.activity.designpatternmvvm.viewmodel.AuthViewModelFactory
 import com.belajar.drakor.activity.main.MainActivity
 import com.belajar.drakor.databinding.ActivityLoginBinding
+import com.belajar.drakor.datastore.UserPreferences
+import kotlinx.coroutines.launch
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
     private lateinit var viewModel: AuthViewModel
-    private lateinit var sharedPreferences: SharedPreferences
+    // private lateinit var sharedPreferences: SharedPreferences
+    private lateinit var userPreferences: UserPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_login)
-        sharedPreferences = getSharedPreferences("login_status", Context.MODE_PRIVATE)
+        // sharedPreferences = getSharedPreferences("login_status", Context.MODE_PRIVATE)
+        userPreferences = UserPreferences(this)
 
         // Initialize the database and UserRepository
         val database = Room.databaseBuilder(applicationContext, AppDatabase::class.java, "app_database").build()
@@ -41,9 +46,10 @@ class LoginActivity : AppCompatActivity() {
 
         viewModel.loginResult.observe(this) { isLoggedIn ->
             if (isLoggedIn) {
-                val editor = sharedPreferences.edit()
-                editor.putBoolean("is_logged_in", true)
-                editor.apply()
+                lifecycleScope.launch {
+                    val username = viewModel.username.value ?: ""
+                    userPreferences.saveLoginStatus(true, username)
+                }
 
                 Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
 
@@ -53,6 +59,21 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show()
             }
         }
+
+//        viewModel.loginResult.observe(this) { isLoggedIn ->
+//            if (isLoggedIn) {
+//                val editor = sharedPreferences.edit()
+//                editor.putBoolean("is_logged_in", true)
+//                editor.apply()
+//
+//                Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
+//
+//                startActivity(Intent(this, MainActivity::class.java))
+//                finish()
+//            } else {
+//                Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show()
+//            }
+//        }
 
         viewModel.registerResult.observe(this) { isRegistered ->
             if (isRegistered) {
