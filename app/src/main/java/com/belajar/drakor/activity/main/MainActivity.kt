@@ -80,6 +80,8 @@ import androidx.lifecycle.lifecycleScope
 import com.belajar.drakor.R
 import com.belajar.drakor.activity.designpatternmvvm.view.LoginActivity
 import com.belajar.drakor.activity.home.HomeActivity
+import com.belajar.drakor.activity.home.ImageLoaderActivity
+import com.belajar.drakor.activity.home.LocationActivity
 import com.belajar.drakor.activity.user.UserActivity
 import com.belajar.drakor.activity.user.UserFragment
 import com.belajar.drakor.datastore.UserPreferences
@@ -177,6 +179,16 @@ class MainActivity : AppCompatActivity() {
                 val buttonLogout: Button = findViewById(R.id.buttonLogout)
                 buttonLogout.setOnClickListener {
                     logout()
+                }
+
+                val buttonLoadImage: Button = findViewById(R.id.buttonLoadImage)
+                buttonLoadImage.setOnClickListener {
+                    startActivity(Intent(this@MainActivity, ImageLoaderActivity::class.java))
+                }
+
+                val buttonLoadLocation: Button = findViewById(R.id.buttonLoadLocation)
+                buttonLoadLocation.setOnClickListener{
+                    startActivity(Intent(this@MainActivity, LocationActivity::class.java))
                 }
 
                 val buttonUser: Button = findViewById(R.id.buttonUser)

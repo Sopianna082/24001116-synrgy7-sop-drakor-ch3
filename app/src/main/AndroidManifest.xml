@@ -32,6 +32,8 @@
         <activity android:name=".activity.designpatternmvvm.view.LoginActivity" android:label="Login Activity"/>
         <activity android:name=".activity.designpatternmvvm.view.RegisterActivity" android:label="Register Activity" />
         <activity android:name=".activity.user.UserActivity" android:label="User Activity" />
+        <activity android:name=".activity.home.ImageLoaderActivity" />
+        <activity android:name=".activity.home.LocationActivity" />
     </application>
 
 
@@ -41,6 +43,7 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
-
+<!--    Izin untuk akses lokasi-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>
