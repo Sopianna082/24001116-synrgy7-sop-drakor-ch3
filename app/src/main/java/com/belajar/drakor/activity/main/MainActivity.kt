@@ -67,23 +67,20 @@
 
 package com.belajar.drakor.activity.main
 
-import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.lifecycleScope
+import com.belajar.drakor.retrofit.PeopleListActivity
 import com.belajar.drakor.R
 import com.belajar.drakor.activity.designpatternmvvm.view.LoginActivity
 import com.belajar.drakor.activity.home.HomeActivity
 import com.belajar.drakor.activity.home.ImageLoaderActivity
 import com.belajar.drakor.activity.home.LocationActivity
 import com.belajar.drakor.activity.user.UserActivity
-import com.belajar.drakor.activity.user.UserFragment
 import com.belajar.drakor.datastore.UserPreferences
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
@@ -190,6 +187,12 @@ class MainActivity : AppCompatActivity() {
                 buttonLoadLocation.setOnClickListener{
                     startActivity(Intent(this@MainActivity, LocationActivity::class.java))
                 }
+
+                val buttonPerson: Button = findViewById(R.id.buttonPerson)
+                buttonPerson.setOnClickListener{
+                    startActivity(Intent(this@MainActivity, PeopleListActivity::class.java))
+                }
+
 
                 val buttonUser: Button = findViewById(R.id.buttonUser)
                 buttonUser.setOnClickListener {

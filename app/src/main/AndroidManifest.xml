@@ -34,6 +34,7 @@
         <activity android:name=".activity.user.UserActivity" android:label="User Activity" />
         <activity android:name=".activity.home.ImageLoaderActivity" />
         <activity android:name=".activity.home.LocationActivity" />
+        <activity android:name=".retrofit.PeopleListActivity" />
     </application>
 
 
