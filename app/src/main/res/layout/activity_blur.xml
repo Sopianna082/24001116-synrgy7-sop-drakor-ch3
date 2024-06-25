@@ -1,0 +1,54 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.belajar.drakor.activity.blurfoto.BlurViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/buttonPickFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick File" />
+
+        <ImageView
+            android:id="@+id/imageViewSelected"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/ic_launcher_background"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"/>
+
+        <Spinner
+            android:id="@+id/spinnerBlurLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/blur_levels"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/buttonApplyBlur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply Blur"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:id="@+id/imageViewBlurred"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</layout>

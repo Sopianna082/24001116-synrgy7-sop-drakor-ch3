@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">drakor</string>
+    <string-array name="blur_levels">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
 </resources>

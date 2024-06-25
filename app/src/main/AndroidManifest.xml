@@ -35,6 +35,7 @@
         <activity android:name=".activity.home.ImageLoaderActivity" />
         <activity android:name=".activity.home.LocationActivity" />
         <activity android:name=".retrofit.PeopleListActivity" />
+        <activity android:name=".activity.blurfoto.BlurActivity" />
     </application>
 
 
