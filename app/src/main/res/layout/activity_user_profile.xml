@@ -1,0 +1,35 @@
+<!-- res/layout/activity_user_profile.xml -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.user.UserProfileActivity">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.belajar.drakor.activity.unggahfoto.UserProfileViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginBottom="16dp"
+            app:imageUrl="@{viewModel.profileImageUrl}" />
+
+        <Button
+            android:id="@+id/buttonUploadProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Profile Photo" />
+    </LinearLayout>
+</layout>

@@ -1,9 +1,10 @@
 package com.belajar.drakor.activity.blurfoto
 
-
 import android.app.Application
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.net.Uri
+import androidx.core.content.FileProvider
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -18,6 +19,11 @@ class BlurViewModel(application: Application) : AndroidViewModel(application) {
 
     private val _outputBitmap = MutableLiveData<Bitmap>()
     val outputBitmap: LiveData<Bitmap> get() = _outputBitmap
+
+    private val _workInfo = MutableLiveData<WorkInfo>()
+    val workInfo: LiveData<WorkInfo> get() = _workInfo
+
+    private lateinit var blurredImageFile: File
 
     fun applyBlur(bitmap: Bitmap, blurLevel: Int) {
         val inputFile = File(getApplication<Application>().cacheDir, "input_image.png")
@@ -39,11 +45,20 @@ class BlurViewModel(application: Application) : AndroidViewModel(application) {
 
         WorkManager.getInstance(getApplication()).getWorkInfoByIdLiveData(blurRequest.id)
             .observeForever { workInfo ->
+                _workInfo.postValue(workInfo)
                 if (workInfo.state == WorkInfo.State.SUCCEEDED) {
-                    val outputFile = File(getApplication<Application>().cacheDir, "blurred_image.png")
-                    val blurredBitmap = BitmapFactory.decodeFile(outputFile.absolutePath)
+                    blurredImageFile = File(getApplication<Application>().cacheDir, "blurred_image.png")
+                    val blurredBitmap = BitmapFactory.decodeFile(blurredImageFile.absolutePath)
                     _outputBitmap.postValue(blurredBitmap)
                 }
             }
+    }
+
+    fun getBlurredImageUri(): Uri {
+        return FileProvider.getUriForFile(
+            getApplication(),
+            "${getApplication<Application>().packageName}.provider",
+            blurredImageFile
+        )
     }
 }

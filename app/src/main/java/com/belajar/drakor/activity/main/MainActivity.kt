@@ -14,6 +14,7 @@ import com.belajar.drakor.activity.designpatternmvvm.view.LoginActivity
 import com.belajar.drakor.activity.home.HomeActivity
 import com.belajar.drakor.activity.home.ImageLoaderActivity
 import com.belajar.drakor.activity.home.LocationActivity
+import com.belajar.drakor.activity.unggahfoto.UserProfileActivity
 import com.belajar.drakor.activity.user.UserActivity
 import com.belajar.drakor.datastore.UserPreferences
 import kotlinx.coroutines.flow.first
@@ -96,6 +97,11 @@ class MainActivity : AppCompatActivity() {
                 val buttonBlurFoto: Button = findViewById(R.id.buttonBlurFoto)
                 buttonBlurFoto.setOnClickListener {
                     startActivity(Intent(this@MainActivity, BlurActivity::class.java))
+                }
+
+                val buttonUserProfile: Button = findViewById(R.id.buttonUnggahFoto)
+                buttonUserProfile.setOnClickListener {
+                    startActivity(Intent(this@MainActivity, UserProfileActivity::class.java))
                 }
             } else {
                 startActivity(Intent(this@MainActivity, LoginActivity::class.java))

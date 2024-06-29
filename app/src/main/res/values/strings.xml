@@ -5,4 +5,5 @@
         <item>Medium</item>
         <item>High</item>
     </string-array>
+    <string name="change_profile_picture">Change Profile Picture</string>
 </resources>

@@ -16,7 +16,7 @@ class BlurWorker(context: Context, workerParams: WorkerParameters) : Worker(cont
 
         return try {
             val bitmap = BitmapFactory.decodeFile(imagePath) ?: return Result.failure()
-            val blurredBitmap = blurBitmap(applicationContext, bitmap, blurLevel.toFloat())
+            val blurredBitmap = blurBitmap(applicationContext, bitmap, blurLevel * 5f)
             val outputFile = File(applicationContext.cacheDir, "blurred_image.png")
 
             FileOutputStream(outputFile).use { out ->
@@ -25,7 +25,7 @@ class BlurWorker(context: Context, workerParams: WorkerParameters) : Worker(cont
 
             Result.success()
         } catch (e: Exception) {
-            e.printStackTrace()  // Print the stack trace of the exception for debugging
+            e.printStackTrace()
             Result.failure()
         }
     }
