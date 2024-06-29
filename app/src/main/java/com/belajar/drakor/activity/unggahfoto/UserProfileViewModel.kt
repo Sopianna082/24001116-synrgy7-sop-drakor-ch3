@@ -33,12 +33,14 @@ class UserProfileViewModel(application: Application) : AndroidViewModel(applicat
         }
     }
 
-    private fun saveImageToInternalStorage(bitmap: Bitmap): File {
-        val file = File(getApplication<Application>().filesDir, "profile_image.png")
-        FileOutputStream(file).use { out ->
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, out)
+    private suspend fun saveImageToInternalStorage(bitmap: Bitmap): File {
+        return withContext(Dispatchers.IO) {
+            val file = File(getApplication<Application>().filesDir, "profile_image.png")
+            FileOutputStream(file).use { out ->
+                bitmap.compress(Bitmap.CompressFormat.PNG, 100, out)
+            }
+            file
         }
-        return file
     }
 
     private fun loadProfileImage() {
