@@ -19,26 +19,6 @@ class DramaViewModel : ViewModel() {
         _favoriteList.value = emptyList()
     }
 
-//    fun addOrRemoveFavorite(drama: Drama){
-//        drama.isFavorite = !drama.isFavorite
-//        if(drama.isFavorite){
-//            _favoriteList.value = _favoriteList.value?.plus(drama)
-//        } else {
-//            _favoriteList.value = _favoriteList.value?.minus(drama)
-//        }
-//        //Update the drama list
-//        _dramaList.value = _dramaList.value?.map {
-//            if (it.title == drama.title) drama else it
-//        }
-//
-//        if (favoriteDramas.contains(drama)) {
-//            favoriteDramas.remove(drama)
-//        } else {
-//            favoriteDramas.add(drama)
-//        }
-//        _favoriteList.value = favoriteDramas.toList()
-//    }
-
     private fun getDramaList(): List<Drama> {
         return listOf(
             Drama("Crash Landing on You", "https://i.pinimg.com/236x/fa/cf/fd/facffd892be28a9ce217b16e6107952e.jpg"),

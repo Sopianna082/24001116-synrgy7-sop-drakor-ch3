@@ -13,7 +13,10 @@ import kotlinx.coroutines.withContext
 import java.io.File
 import java.io.FileOutputStream
 
-class UserProfileViewModel(application: Application) : AndroidViewModel(application) {
+class UserProfileViewModel(
+    application: Application,
+    private val userProfileRepository: UserProfileRepository
+) : AndroidViewModel(application) {
 
     private val _profileImage = MutableLiveData<Bitmap>()
     val profileImage: LiveData<Bitmap> get() = _profileImage

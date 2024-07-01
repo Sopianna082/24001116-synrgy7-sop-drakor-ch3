@@ -1,4 +1,4 @@
-package com.belajar.drakor
+package com.belajar.drakor.activity.home
 
 import android.app.Activity
 import android.content.Intent
@@ -12,6 +12,7 @@ import android.view.ViewGroup
 import android.widget.Button
 //import android.widget.ImageView
 import androidx.fragment.app.Fragment
+import com.belajar.drakor.R
 
 class ProfileFragment : Fragment() {
 

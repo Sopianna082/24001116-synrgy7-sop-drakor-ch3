@@ -80,4 +80,7 @@ dependencies {
     implementation "androidx.work:work-runtime-ktx:2.8.1"
     implementation "com.google.dagger:hilt-android:2.40.5"
     kapt "com.google.dagger:hilt-compiler:2.40.5"
+
+    implementation "io.insert-koin:koin-android:3.3.2"
+
 }

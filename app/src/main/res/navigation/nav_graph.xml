@@ -16,7 +16,7 @@
 
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.belajar.drakor.SearchFragment"
+        android:name="com.belajar.drakor.activity.home.SearchFragment"
         android:label="Search Fragment" >
         <action
             android:id="@+id/action_searchFragment_to_homeFragment"
@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.belajar.drakor.ProfileFragment"
+        android:name="com.belajar.drakor.activity.home.ProfileFragment"
         android:label="Profile Fragment" >
         <action
             android:id="@+id/action_profileFragment_to_homeFragment"
@@ -91,12 +91,12 @@
 
 <!--    <fragment-->
 <!--        android:id="@+id/searchFragment"-->
-<!--        android:name="com.belajar.drakor.SearchFragment"-->
+<!--        android:name="com.belajar.drakor.activity.home.SearchFragment"-->
 <!--        android:label="Search Fragment" />-->
 
 <!--    <fragment-->
 <!--        android:id="@+id/profileFragment"-->
-<!--        android:name="com.belajar.drakor.ProfileFragment"-->
+<!--        android:name="com.belajar.drakor.activity.home.ProfileFragment"-->
 <!--        android:label="Profile Fragment" />-->
 
 <!--    <fragment-->

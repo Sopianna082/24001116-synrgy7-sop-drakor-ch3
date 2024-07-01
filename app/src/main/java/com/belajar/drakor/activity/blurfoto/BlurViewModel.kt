@@ -8,14 +8,13 @@ import androidx.core.content.FileProvider
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.work.Data
-import androidx.work.OneTimeWorkRequest
-import androidx.work.WorkInfo
-import androidx.work.WorkManager
+import androidx.lifecycle.viewModelScope
+import androidx.work.*
+import kotlinx.coroutines.launch
 import java.io.File
 import java.io.FileOutputStream
 
-class BlurViewModel(application: Application) : AndroidViewModel(application) {
+class BlurViewModel(application: Application, private val repository: BlurRepository) : AndroidViewModel(application) {
 
     private val _outputBitmap = MutableLiveData<Bitmap>()
     val outputBitmap: LiveData<Bitmap> get() = _outputBitmap

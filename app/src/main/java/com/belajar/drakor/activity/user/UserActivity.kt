@@ -11,13 +11,15 @@ import com.belajar.drakor.activity.MyApplication
 import com.belajar.drakor.activity.designpatternmvvm.model.User
 import com.belajar.drakor.databinding.ActivityUserBinding
 import kotlinx.coroutines.launch
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class UserActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityUserBinding
-    private val viewModel: UserViewModel by viewModels {
-        UserViewModelFactory((application as MyApplication).repository)
-    }
+    private val viewModel: UserViewModel by viewModel()
+//    private val viewModel: UserViewModel by viewModels {
+//        UserViewModelFactory((application as MyApplication).repository)
+//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -11,10 +11,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.belajar.drakor.R
 import com.belajar.drakor.activity.drama.adapter.DramaAdapter
 import com.belajar.drakor.activity.drama.adapter.OnItemClickListener
+import com.belajar.drakor.datastore.UserPreferences
+import org.koin.android.ext.android.inject
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class DramaListFragment : Fragment(), OnItemClickListener {
 
     private lateinit var recyclerView: RecyclerView
+    private val dramaViewModel: DramaViewModel by viewModel()
+    private val userPreferences: UserPreferences by inject()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -24,8 +29,10 @@ class DramaListFragment : Fragment(), OnItemClickListener {
         val view = inflater.inflate(R.layout.fragment_drama_list, container, false)
         recyclerView = view.findViewById(R.id.recyclerViewDramaList)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
+
         val dramaAdapter = DramaAdapter(getDramaList(), this) // Pass the drama list and click listener
         recyclerView.adapter = dramaAdapter
+
         return view
     }
 

@@ -11,13 +11,15 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.belajar.drakor.activity.MyApplication
 import com.belajar.drakor.databinding.FragmentUserBinding
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class UserFragment : Fragment() {
 
     private lateinit var binding: FragmentUserBinding
-    private val viewModel: UserViewModel by viewModels {
-        UserViewModelFactory((requireActivity().application as MyApplication).repository)
-    }
+    private val viewModel: UserViewModel by viewModel()
+//    private val viewModel: UserViewModel by viewModels {
+//        UserViewModelFactory((requireActivity().application as MyApplication).repository)
+//    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

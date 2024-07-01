@@ -1,10 +1,11 @@
-package com.belajar.drakor
+package com.belajar.drakor.activity.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.belajar.drakor.R
 
 class SearchFragment : Fragment() {
 
