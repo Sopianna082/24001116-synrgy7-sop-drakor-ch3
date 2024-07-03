@@ -7,16 +7,16 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.belajar.drakor.retrofit.PeopleListActivity
+import com.belajar.drakor.activity.person.PeopleListActivity
 import com.belajar.drakor.R
 import com.belajar.drakor.activity.blurfoto.BlurActivity
-import com.belajar.drakor.activity.designpatternmvvm.view.LoginActivity
+import com.belajar.drakor.activity.auth.view.LoginActivity
 import com.belajar.drakor.activity.home.HomeActivity
 import com.belajar.drakor.activity.home.ImageLoaderActivity
 import com.belajar.drakor.activity.home.LocationActivity
 import com.belajar.drakor.activity.unggahfoto.UserProfileActivity
 import com.belajar.drakor.activity.user.UserActivity
-import com.belajar.drakor.datastore.UserPreferences
+import com.belajar.drakor.data.datasource.local.datastore.UserPreferences
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 

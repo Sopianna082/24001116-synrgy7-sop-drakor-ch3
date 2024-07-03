@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.belajar.drakor.R
-import com.belajar.drakor.activity.drama.Drama
+import com.belajar.drakor.domain.model.Drama
 
 interface OnItemClickListener {
     fun onItemClick(drama: Drama)

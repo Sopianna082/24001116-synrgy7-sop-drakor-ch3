@@ -7,11 +7,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.belajar.drakor.R
-import com.belajar.drakor.activity.drama.adapter.DramaAdapter
+import com.belajar.drakor.domain.model.Drama
 
 class DramaDetailFragment : Fragment() {
 

@@ -5,7 +5,7 @@
     <data>
         <variable
             name="user"
-            type="com.belajar.drakor.activity.designpatternmvvm.model.User" />
+            type="com.belajar.drakor.data.datasource.local.room.User" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

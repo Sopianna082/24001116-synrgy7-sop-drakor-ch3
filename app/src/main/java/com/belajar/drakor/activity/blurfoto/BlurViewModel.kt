@@ -8,9 +8,9 @@ import androidx.core.content.FileProvider
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.viewModelScope
 import androidx.work.*
-import kotlinx.coroutines.launch
+import com.belajar.drakor.activity.worker.BlurWorker
+import com.belajar.drakor.domain.repository.BlurRepository
 import java.io.File
 import java.io.FileOutputStream
 

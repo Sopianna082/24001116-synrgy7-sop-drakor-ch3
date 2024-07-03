@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:name=".activity.MyApplication"
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -29,12 +29,12 @@
         <activity android:name=".activity.drama.DetailActivity" android:label="Detail Activity"/>
         <activity android:name=".activity.home.NavActivity" android:label="Nav Activity"/>
         <activity android:name=".activity.home.HomeActivity" android:label="Home Activity"/>
-        <activity android:name=".activity.designpatternmvvm.view.LoginActivity" android:label="Login Activity"/>
-        <activity android:name=".activity.designpatternmvvm.view.RegisterActivity" android:label="Register Activity" />
+        <activity android:name=".activity.auth.view.LoginActivity" android:label="Login Activity"/>
+        <activity android:name=".activity.auth.view.RegisterActivity" android:label="Register Activity" />
         <activity android:name=".activity.user.UserActivity" android:label="User Activity" />
         <activity android:name=".activity.home.ImageLoaderActivity" />
         <activity android:name=".activity.home.LocationActivity" />
-        <activity android:name=".retrofit.PeopleListActivity" />
+        <activity android:name=".activity.person.PeopleListActivity" />
         <activity android:name=".activity.blurfoto.BlurActivity" />
         <activity android:name=".activity.unggahfoto.UserProfileActivity" />
 

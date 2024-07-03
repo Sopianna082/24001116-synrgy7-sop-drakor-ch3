@@ -3,6 +3,7 @@ package com.belajar.drakor.activity.drama
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.belajar.drakor.domain.model.Drama
 
 class DramaViewModel : ViewModel() {
     private val _dramaList = MutableLiveData<List<Drama>>()

@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.belajar.drakor.activity.designpatternmvvm.model.User
+import com.belajar.drakor.data.datasource.local.room.User
 import com.belajar.drakor.databinding.ItemUserBinding
 
 class UserAdapter(private val onDeleteClick: (User) -> Unit) :

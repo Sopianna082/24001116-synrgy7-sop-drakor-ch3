@@ -3,8 +3,8 @@ package com.belajar.drakor.activity.user
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
-import com.belajar.drakor.activity.designpatternmvvm.model.User
-import com.belajar.drakor.activity.designpatternmvvm.model.UserRepository
+import com.belajar.drakor.data.datasource.local.room.User
+import com.belajar.drakor.data.repository.UserRepository
 import kotlinx.coroutines.launch
 import android.util.Log
 import kotlinx.coroutines.Dispatchers

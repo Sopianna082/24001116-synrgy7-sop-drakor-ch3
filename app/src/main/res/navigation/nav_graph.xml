@@ -49,7 +49,7 @@
         tools:layout="@layout/fragment_detail_drama">
         <argument
             android:name="drama"
-            app:argType="com.belajar.drakor.activity.drama.Drama" />
+            app:argType="com.belajar.drakor.domain.model.Drama" />
     </fragment>
 
     <!--    <fragment-->
@@ -116,7 +116,7 @@
 <!--        tools:layout="@layout/fragment_detail_drama">-->
 <!--        <argument-->
 <!--            android:name="drama"-->
-<!--            app:argType="com.belajar.drakor.activity.drama.Drama" />-->
+<!--            app:argType="com.belajar.drakor.domain.model.Drama" />-->
 <!--    </fragment>-->
 
 <!--&lt;!&ndash;    <fragment&ndash;&gt;-->

@@ -2,13 +2,11 @@ package com.belajar.drakor.activity.user
 
 import android.os.Bundle
 import android.util.Log
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.belajar.drakor.activity.MyApplication
-import com.belajar.drakor.activity.designpatternmvvm.model.User
+import com.belajar.drakor.data.datasource.local.room.User
 import com.belajar.drakor.databinding.ActivityUserBinding
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel

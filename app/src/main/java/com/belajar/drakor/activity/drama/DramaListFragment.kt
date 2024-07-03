@@ -11,7 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.belajar.drakor.R
 import com.belajar.drakor.activity.drama.adapter.DramaAdapter
 import com.belajar.drakor.activity.drama.adapter.OnItemClickListener
-import com.belajar.drakor.datastore.UserPreferences
+import com.belajar.drakor.data.datasource.local.datastore.UserPreferences
+import com.belajar.drakor.domain.model.Drama
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
