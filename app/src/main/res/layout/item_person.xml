@@ -6,7 +6,7 @@
     <data>
         <variable
             name="person"
-            type="com.belajar.drakor.data.datasource.remote.model.request.Person" />
+            type="com.belajar.drakor.domain.model.request.Person" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

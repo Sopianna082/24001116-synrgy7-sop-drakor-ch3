@@ -3,7 +3,7 @@ package com.belajar.drakor.activity.person
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
-import com.belajar.drakor.data.datasource.remote.model.ApiClient
+import com.belajar.drakor.data.datasource.remote.ApiClient
 import kotlinx.coroutines.Dispatchers
 
 class PeopleViewModel : ViewModel() {

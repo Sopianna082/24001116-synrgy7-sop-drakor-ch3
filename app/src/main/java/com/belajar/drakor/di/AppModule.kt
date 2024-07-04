@@ -15,6 +15,7 @@ import com.belajar.drakor.activity.unggahfoto.UserProfileViewModel
 import com.belajar.drakor.data.datasource.local.room.UserRoomDatabase
 import com.belajar.drakor.activity.user.UserViewModel
 import com.belajar.drakor.data.datasource.local.datastore.UserPreferences
+import com.belajar.drakor.domain.usecase.GetPopularPeopleUseCase
 import org.koin.android.ext.koin.androidApplication
 import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
@@ -56,4 +57,6 @@ val appModule = module {
     single { UserRepository(get()) }
 
     viewModel { UserViewModel(get()) }
+
+    single { GetPopularPeopleUseCase(get()) }
 }

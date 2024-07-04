@@ -3,7 +3,7 @@ package com.belajar.drakor.activity.person
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.belajar.drakor.data.datasource.remote.model.request.Person
+import com.belajar.drakor.domain.model.request.Person
 import com.belajar.drakor.databinding.ItemPersonBinding
 import com.bumptech.glide.Glide
 

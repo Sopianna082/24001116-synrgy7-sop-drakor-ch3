@@ -1,18 +1,28 @@
-package com.belajar.drakor.data.datasource.remote.model
+package com.belajar.drakor.data.di
 
-import com.google.gson.Gson
+import com.belajar.drakor.common.NetworkHelper
+import com.belajar.drakor.data.datasource.remote.ApiService
+import com.belajar.drakor.data.datasource.remote.PeopleRemoteDataSource
+import com.belajar.drakor.data.datasource.remote.TMDB_TOKEN
+import com.belajar.drakor.data.repository.PeopleRepositoryImpl
+import com.belajar.drakor.domain.repository.PeopleRepository
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-const val TMDB_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZmExYzUzNmZmMTcyNTdiODY1ZWI0OTA2YjNiYWU2ZCIsInN1YiI6IjY2NGFiNWFiYTBmNzE0NGU0NDkyYzI3YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.-2CdP-b3-_IUbZN8fyJjAw-htE7wUdFR4OS848jW580"
+val dataModule = module {
+    single { NetworkHelper.createRetrofit("https://api.themoviedb.org/3/").create(ApiService::class.java) }
+    single { PeopleRemoteDataSource(get()) }
+    single<PeopleRepository> { PeopleRepositoryImpl(get()) }
+}
 
 private fun provideRetrofit(): Retrofit {
     return Retrofit.Builder()
         .baseUrl("https://api.themoviedb.org/3/")
-        .addConverterFactory(GsonConverterFactory.create(Gson()))
+        .addConverterFactory(GsonConverterFactory.create())
         .client(provideOkHttpClient())
         .build()
 }
@@ -36,8 +46,3 @@ private fun provideOkHttpClient(): OkHttpClient {
         .build()
 }
 
-object ApiClient {
-    val instance: ApiService by lazy {
-        provideRetrofit().create(ApiService::class.java)
-    }
-}

@@ -1,4 +1,4 @@
-package com.belajar.drakor.data.datasource.remote.model
+package com.belajar.drakor.data.datasource.remote
 
 import com.belajar.drakor.data.datasource.remote.model.response.PeopleResponse
 import retrofit2.http.GET

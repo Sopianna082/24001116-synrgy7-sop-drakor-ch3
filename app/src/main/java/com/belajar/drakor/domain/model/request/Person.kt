@@ -1,4 +1,4 @@
-package com.belajar.drakor.data.datasource.remote.model.request
+package com.belajar.drakor.domain.model.request
 
 data class Person(
     val id: Int,
