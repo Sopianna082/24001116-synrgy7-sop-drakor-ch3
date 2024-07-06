@@ -19,15 +19,45 @@ android {
     }
 
     buildTypes {
+        debug {
+            minifyEnabled false
+            debuggable true
+            applicationIdSuffix ".dev"
+        }
+        create("staging") {
+            minifyEnabled true
+            debuggable true
+            applicationIdSuffix ".stg"
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
         release {
             minifyEnabled false
+            debuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // Flavor dimensions
+    flavorDimensions "mode"
+
+    // Product flavors configuration
+    productFlavors {
+        free {
+            dimension "mode"
+            applicationIdSuffix = ".free"
+            versionNameSuffix = "-free"
+        }
+        paid {
+            dimension "mode"
+            applicationIdSuffix = ".paid"
+            versionNameSuffix = "-paid"
         }
     }
 
     buildFeatures {
         dataBinding true
         viewBinding true
+        buildConfig = true
     }
 
     compileOptions {
@@ -52,11 +82,29 @@ dependencies {
     implementation 'androidx.room:room-ktx:2.6.1'
     implementation 'com.google.android.gms:play-services-location:21.3.0'
     implementation 'com.google.android.datatransport:transport-runtime:3.3.0'
+    implementation 'androidx.test:core-ktx:1.6.1'
+    implementation 'androidx.test.ext:junit-ktx:1.2.1'
     kapt 'androidx.room:room-compiler:2.6.1'
 
+    // JUnit
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // Mockito
+    testImplementation "junit:junit:4.13.2"
+    testImplementation "org.mockito:mockito-core:3.12.4"
+    testImplementation "org.mockito:mockito-inline:3.12.4"
+    testImplementation "org.mockito.kotlin:mockito-kotlin:3.2.0"
+
+    // AndroidX Test
+    testImplementation 'androidx.arch.core:core-testing:2.1.0'
+
+    testImplementation 'org.robolectric:robolectric:4.8'
+
+
+    // Coroutines Testing
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.0'
 
     implementation 'io.coil-kt:coil:1.4.0'
     implementation "androidx.navigation:navigation-fragment-ktx:2.4.0"

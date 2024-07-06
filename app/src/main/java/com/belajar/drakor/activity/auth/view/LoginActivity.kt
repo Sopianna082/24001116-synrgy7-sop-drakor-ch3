@@ -20,7 +20,7 @@ import kotlinx.coroutines.launch
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
-    private lateinit var viewModel: AuthViewModel
+    lateinit var viewModel: AuthViewModel
     // private lateinit var sharedPreferences: SharedPreferences
     private lateinit var userPreferences: UserPreferences
 

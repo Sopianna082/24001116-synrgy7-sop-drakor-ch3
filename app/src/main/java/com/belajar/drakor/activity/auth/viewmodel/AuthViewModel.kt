@@ -9,8 +9,8 @@ import com.belajar.drakor.data.repository.UserRepository
 import kotlinx.coroutines.launch
 
 class AuthViewModel(private val userRepository: UserRepository) : ViewModel() {
-    val username = MutableLiveData<String>()
-    val password = MutableLiveData<String>()
+    var username = MutableLiveData<String>()
+    var password = MutableLiveData<String>()
 
     private val _loginResult = MutableLiveData<Boolean>()
     val loginResult: LiveData<Boolean> = _loginResult

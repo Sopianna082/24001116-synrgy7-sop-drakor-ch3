@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 
-private val Context.dataStore by preferencesDataStore("user_preferences")
+val Context.dataStore by preferencesDataStore("user_preferences")
 class UserPreferences(context: Context) {
     private val dataStore = context.dataStore
 

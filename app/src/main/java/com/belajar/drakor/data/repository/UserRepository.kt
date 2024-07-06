@@ -11,7 +11,7 @@ class UserRepository(private val userDao: UserDao) {
 
     suspend fun registerUser(user: User) {
         userDao.insertUser(user)
-        Log.d("UserRepository", "User registered: $user")
+//        Log.d("UserRepository", "User registered: $user")
     }
 
     suspend fun loginUser(username: String, password: String): User? {
@@ -24,7 +24,7 @@ class UserRepository(private val userDao: UserDao) {
 
     suspend fun getAllUsersList(): List<User> {
         val users = userDao.getAllUsersList()
-        Log.d("UserRepository", "Users in DB: $users")
+//        Log.d("UserRepository", "Users in DB: $users")
         return users
     }
 }
