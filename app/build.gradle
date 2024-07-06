@@ -128,4 +128,9 @@ dependencies {
     implementation "androidx.work:work-runtime-ktx:2.8.1"
     implementation "io.insert-koin:koin-android:$koin_version"
 
+    //chucker
+    implementation 'com.github.chuckerteam.chucker:library:3.5.2'
+    debugImplementation 'com.github.chuckerteam.chucker:library:3.5.2'
+    releaseImplementation 'com.github.chuckerteam.chucker:library-no-op:3.5.2'
+
 }
