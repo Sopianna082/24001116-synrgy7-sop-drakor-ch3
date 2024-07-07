@@ -68,6 +68,28 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+//    lint {
+//        baseline = file("lint.xml")
+//    }
+
+    lintOptions {
+        // Memilih jenis laporan yang ingin diperiksa
+        check "UnusedResources"
+        // Atur opsi lainnya sesuai kebutuhan
+        abortOnError false
+        warningsAsErrors true
+        checkReleaseBuilds true
+
+        baseline file("lint-baseline.xml") // Konfigurasi baseline
+        htmlReport true                    // Mengaktifkan laporan HTML
+        htmlOutput file("build/reports/lint-results.html") // Lokasi output untuk laporan HTML
+        xmlReport true                     // Mengaktifkan laporan XML
+        xmlOutput file("build/reports/lint-results.xml")   // Lokasi output untuk laporan XML
+        textReport true                    // Mengaktifkan laporan teks
+        textOutput file("build/reports/lint-results.txt")  // Lokasi output untuk laporan teks
+    }
+
 }
 
 dependencies {
