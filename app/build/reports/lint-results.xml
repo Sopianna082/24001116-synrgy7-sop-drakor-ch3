@@ -1,0 +1,2848 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.4.0">
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`issues`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="&lt;issues format=&quot;5&quot; by=&quot;lint Jellyfish | 2023.3.1&quot;>"
+        errorLine2="^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`issues`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="&lt;issues format=&quot;5&quot; by=&quot;lint Jellyfish | 2023.3.1&quot;>"
+        errorLine2="^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`issues`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="&lt;issues format=&quot;5&quot; by=&quot;lint Jellyfish | 2023.3.1&quot;>"
+        errorLine2="^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;JCenter Maven repository is no longer receiving updates: newer library versions may be available elsewhere&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="6"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;JCenter Maven repository is no longer receiving updates: newer library versions may be available elsewhere&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="6"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;JCenter Maven repository is no longer receiving updates: newer library versions may be available elsewhere&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="6"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="8"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="8"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="8"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="13"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="13"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="13"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="15"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="15"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="15"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="20"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="20"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="20"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="22"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="22"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="22"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="27"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="27"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="27"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="29"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="29"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="29"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="34"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="34"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="34"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="36"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="36"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="36"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.8.22 is available: 1.9.23&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="41"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.8.22 is available: 1.9.23&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="41"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.8.22 is available: 1.9.23&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="41"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="43"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="43"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="43"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.color.black` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="48"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.color.black` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="48"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.color.black` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="48"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;3&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="51"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;3&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="51"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;3&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="51"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.color.black` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="56"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.color.black` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="56"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.color.black` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="56"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;3&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="59"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;3&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="59"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;3&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="59"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.color.white` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="64"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.color.white` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="64"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.color.white` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="64"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;4&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="67"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;4&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="67"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;4&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="67"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.color.white` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="72"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.color.white` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="72"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.color.white` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="72"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;4&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="75"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;4&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="75"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;4&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="75"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.drawable.custom_button_background` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="80"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.drawable.custom_button_background` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="80"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.drawable.custom_button_background` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="80"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;2&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="83"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;2&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="83"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;2&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="83"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.layout.fragment_item_list` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="88"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.layout.fragment_item_list` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="88"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.layout.fragment_item_list` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="88"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;2&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="91"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;2&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="91"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;2&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="91"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.drawable.ic_favorite` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="96"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.drawable.ic_favorite` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="96"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.drawable.ic_favorite` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="96"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;2&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="99"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;2&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="99"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;2&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="99"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.xml.lint` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="104"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.xml.lint` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="104"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.xml.lint` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="104"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;2&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="107"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;2&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="107"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;2&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="107"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.navigation.nav_graph_main` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="112"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.navigation.nav_graph_main` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="112"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.navigation.nav_graph_main` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="112"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;1&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="115"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;1&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="115"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;1&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="115"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.array.blur_levels` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="120"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.array.blur_levels` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="120"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.array.blur_levels` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="120"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;3&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="123"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;3&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="123"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;3&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="123"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.string.change_profile_picture` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="128"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.string.change_profile_picture` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="128"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.string.change_profile_picture` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="128"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;8&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="131"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;8&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="131"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;8&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="131"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.style.ButtonStyle` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="136"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.style.ButtonStyle` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="136"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.style.ButtonStyle` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="136"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;3&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="139"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;3&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="139"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;3&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="139"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.style.logo` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="144"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.style.logo` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="144"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.style.logo` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="144"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;10&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="147"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;10&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="147"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;10&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="147"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.style.fontStyle` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="152"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.style.fontStyle` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="152"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.style.fontStyle` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="152"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;21&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="155"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;21&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="155"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;21&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="155"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;Add suffix `-ktx` to enable the Kotlin extensions for this library&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="160"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;Add suffix `-ktx` to enable the Kotlin extensions for this library&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="160"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;Add suffix `-ktx` to enable the Kotlin extensions for this library&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="160"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="162"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="162"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="162"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;Add suffix `-ktx` to enable the Kotlin extensions for this library&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="167"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;Add suffix `-ktx` to enable the Kotlin extensions for this library&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="167"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;Add suffix `-ktx` to enable the Kotlin extensions for this library&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="167"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="169"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="169"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Error"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="169"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`issues`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="&lt;issues format=&quot;5&quot; by=&quot;lint Jellyfish | 2023.3.1&quot;>"
+        errorLine2="^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;JCenter Maven repository is no longer receiving updates: newer library versions may be available elsewhere&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="6"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="8"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="13"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="15"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="20"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="22"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="27"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="29"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="34"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="36"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.8.22 is available: 1.9.23&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="41"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="43"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.color.black` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="48"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;3&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="51"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.color.black` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="56"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;3&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="59"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.color.white` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="64"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;4&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="67"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.color.white` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="72"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;4&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="75"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.drawable.custom_button_background` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="80"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;2&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="83"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.layout.fragment_item_list` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="88"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;2&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="91"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.drawable.ic_favorite` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="96"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;2&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="99"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.xml.lint` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="104"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;2&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="107"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.navigation.nav_graph_main` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="112"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;1&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="115"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.array.blur_levels` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="120"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;3&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="123"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.string.change_profile_picture` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="128"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;8&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="131"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.style.ButtonStyle` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="136"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;3&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="139"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.style.logo` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="144"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;10&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="147"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;The resource `R.style.fontStyle` appears to be unused&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="152"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            line=&quot;21&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="155"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;Add suffix `-ktx` to enable the Kotlin extensions for this library&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="160"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="162"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unexpected attribute `message`, expected `id`, `in` or `severity`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="        message=&quot;Add suffix `-ktx` to enable the Kotlin extensions for this library&quot;>"
+        errorLine2="        ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="167"/>
+    </issue>
+
+    <issue
+        id="LintWarning"
+        severity="Warning"
+        message="Unsupported tag &lt;`location`>, expected one of `lint`, `issue`, `ignore` or `option`"
+        category="Lint"
+        priority="5"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed."
+        errorLine1="            file=&quot;build.gradle&quot;/>"
+        errorLine2="            ^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
+            line="169"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Error"
+        message="The resource `R.drawable.custom_button_background` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\drawable\custom_button_background.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Error"
+        message="The resource `R.layout.fragment_item_list` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="&lt;androidx.constraintlayout.widget.ConstraintLayout"
+        errorLine2="^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\layout\fragment_item_list.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Error"
+        message="The resource `R.drawable.ic_favorite` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\drawable\ic_favorite.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Error"
+        message="The resource `R.navigation.nav_graph_main` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="&lt;navigation xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\navigation\nav_graph_main.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Error"
+        message="The resource `R.array.blur_levels` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string-array name=&quot;blur_levels&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\values\strings.xml"
+            line="3"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Error"
+        message="The resource `R.string.change_profile_picture` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string name=&quot;change_profile_picture&quot;>Change Profile Picture&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\values\strings.xml"
+            line="8"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Error"
+        message="The resource `R.style.ButtonStyle` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;style name=&quot;ButtonStyle&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\values\style.xml"
+            line="3"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Error"
+        message="The resource `R.style.logo` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;style name=&quot;logo&quot;>"
+        errorLine2="           ~~~~~~~~~~~">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\values\style.xml"
+            line="10"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Error"
+        message="The resource `R.style.fontStyle` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;style name=&quot;fontStyle&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\values\style.xml"
+            line="21"
+            column="12"/>
+    </issue>
+
+</issues>
