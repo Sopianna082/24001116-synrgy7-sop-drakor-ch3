@@ -69,10 +69,6 @@ android {
         jvmTarget = '1.8'
     }
 
-//    lint {
-//        baseline = file("lint.xml")
-//    }
-
     lintOptions {
         // Memilih jenis laporan yang ingin diperiksa
         check "UnusedResources"
@@ -83,13 +79,12 @@ android {
 
         baseline file("lint-baseline.xml") // Konfigurasi baseline
         htmlReport true                    // Mengaktifkan laporan HTML
-        htmlOutput file("build/reports/lint-results.html") // Lokasi output untuk laporan HTML
+        htmlOutput file("build/reports/lint-results-freeDebug.html") // Lokasi output untuk laporan HTML
         xmlReport true                     // Mengaktifkan laporan XML
-        xmlOutput file("build/reports/lint-results.xml")   // Lokasi output untuk laporan XML
+        xmlOutput file("build/reports/lint-results-freeDebug.xml")   // Lokasi output untuk laporan XML
         textReport true                    // Mengaktifkan laporan teks
-        textOutput file("build/reports/lint-results.txt")  // Lokasi output untuk laporan teks
+        textOutput file("build/reports/lint-results-freeDebug.txt")  // Lokasi output untuk laporan teks
     }
-
 }
 
 dependencies {
@@ -150,9 +145,7 @@ dependencies {
     implementation "androidx.work:work-runtime-ktx:2.8.1"
     implementation "io.insert-koin:koin-android:$koin_version"
 
-    //chucker
-    implementation 'com.github.chuckerteam.chucker:library:3.5.2'
+    // Chucker
     debugImplementation 'com.github.chuckerteam.chucker:library:3.5.2'
     releaseImplementation 'com.github.chuckerteam.chucker:library-no-op:3.5.2'
-
 }
