@@ -1,0 +1,911 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Lint Report</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-indigo.min.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+<style>
+section.section--center {
+    max-width: 860px;
+}
+.mdl-card__supporting-text + .mdl-card__actions {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+main > .mdl-layout__tab-panel {
+  padding: 8px;
+  padding-top: 48px;
+}
+
+.mdl-card__actions {
+    margin: 0;
+    padding: 4px 40px;
+    color: inherit;
+}
+.mdl-card > * {
+    height: auto;
+}
+.mdl-card__actions a {
+    color: #00BCD4;
+    margin: 0;
+}
+.error-icon {
+    color: #bb7777;
+    vertical-align: bottom;
+}
+.warning-icon {
+    vertical-align: bottom;
+}
+.mdl-layout__content section:not(:last-of-type) {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.mdl-card .mdl-card__supporting-text {
+  margin: 40px;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0;
+  color: inherit;
+  width: calc(100% - 80px);
+}
+div.mdl-layout__drawer-button .material-icons {
+    line-height: 48px;
+}
+.mdl-card .mdl-card__supporting-text {
+    margin-top: 0px;
+}
+.chips {
+    float: right;
+    vertical-align: middle;
+}
+
+pre.errorlines {
+    background-color: white;
+    font-family: monospace;
+    border: 1px solid #e0e0e0;
+    line-height: 0.9rem;
+    font-size: 0.9rem;    padding: 1px 0px 1px; 1px;
+    overflow: scroll;
+}
+.prefix {
+    color: #660e7a;
+    font-weight: bold;
+}
+.attribute {
+    color: #0000ff;
+    font-weight: bold;
+}
+.value {
+    color: #008000;
+    font-weight: bold;
+}
+.tag {
+    color: #000080;
+    font-weight: bold;
+}
+.comment {
+    color: #808080;
+    font-style: italic;
+}
+.javadoc {
+    color: #808080;
+    font-style: italic;
+}
+.annotation {
+    color: #808000;
+}
+.string {
+    color: #008000;
+    font-weight: bold;
+}
+.number {
+    color: #0000ff;
+}
+.keyword {
+    color: #000080;
+    font-weight: bold;
+}
+.caretline {
+    background-color: #fffae3;
+}
+.lineno {
+    color: #999999;
+    background-color: #f0f0f0;
+}
+.error {
+    display: inline-block;
+    position:relative;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AwCFR4T/3uLMgAAADxJREFUCNdNyLERQEAABMCjL4lQwIzcjErpguAL+C9AvgKJDbeD/PRpLdm35Hm+MU+cB+tCKaJW4L4YBy+CAiLJrFs9mgAAAABJRU5ErkJggg==) bottom repeat-x;
+}
+.warning {
+    text-decoration: none;
+    background-color: #f6ebbc;
+}
+.overview {
+    padding: 10pt;
+    width: 100%;
+    overflow: auto;
+    border-collapse:collapse;
+}
+.overview tr {
+    border-bottom: solid 1px #eeeeee;
+}
+.categoryColumn a {
+     text-decoration: none;
+     color: inherit;
+}
+.countColumn {
+    text-align: right;
+    padding-right: 20px;
+    width: 50px;
+}
+.issueColumn {
+   padding-left: 16px;
+}
+.categoryColumn {
+   position: relative;
+   left: -50px;
+   padding-top: 20px;
+   padding-bottom: 5px;
+}
+.options {
+   padding-left: 16px;
+}
+</style>
+<script language="javascript" type="text/javascript">
+<!--
+function reveal(id) {
+if (document.getElementById) {
+document.getElementById(id).style.display = 'block';
+document.getElementById(id+'Link').style.display = 'none';
+}
+}
+function hideid(id) {
+if (document.getElementById) {
+document.getElementById(id).style.display = 'none';
+}
+}
+//-->
+</script>
+</head>
+<body class="mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">Lint Report: 144 errors and 45 warnings</span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Sun Jul 07 13:58:29 ICT 2024 by AGP (8.4.0)</nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Issue Types</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="#overview"><i class="material-icons">dashboard</i>Overview</a>
+      <a class="mdl-navigation__link" href="#LintWarning"><i class="material-icons error-icon">error</i>Lint Failure (180)</a>
+      <a class="mdl-navigation__link" href="#UnusedResources"><i class="material-icons error-icon">error</i>Unused resources (9)</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="mdl-layout__tab-panel is-active">
+<a name="overview"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="OverviewCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Overview</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<table class="overview">
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Lint">Lint</a>
+</td></tr>
+<tr>
+<td class="countColumn">180</td><td class="issueColumn"><i class="material-icons error-icon">error</i>
+<a href="#LintWarning">LintWarning</a>: Lint Failure</td></tr>
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Performance">Performance</a>
+</td></tr>
+<tr>
+<td class="countColumn">9</td><td class="issueColumn"><i class="material-icons error-icon">error</i>
+<a href="#UnusedResources">UnusedResources</a>: Unused resources</td></tr>
+</table>
+<br/>              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="OverviewCardLink" onclick="hideid('OverviewCard');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Lint"></a>
+<a name="LintWarning"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="LintWarningCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Lint Failure</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:2</span>: <span class="message">Unsupported tag &lt;<code>issues</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">   1 </span><span class="prologue">&lt;?xml version="1.0" encoding="UTF-8"?></span>
+<span class="caretline"><span class="lineno">   2 </span><span class="error"><span class="tag">&lt;issues</span><span class="attribute"> format</span>=<span class="value">"5"</span> <span class="attribute">by</span>=<span class="value">"lint Jellyfish | 2023.3.1"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">   3 </span>
+<span class="lineno">   4 </span>    <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">   5 </span><span class="attribute">        id</span>=<span class="value">"JcenterRepositoryObsolete"</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:2</span>: <span class="message">Unsupported tag &lt;<code>issues</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">   1 </span><span class="prologue">&lt;?xml version="1.0" encoding="UTF-8"?></span>
+<span class="caretline"><span class="lineno">   2 </span><span class="error"><span class="tag">&lt;issues</span><span class="attribute"> format</span>=<span class="value">"5"</span> <span class="attribute">by</span>=<span class="value">"lint Jellyfish | 2023.3.1"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">   3 </span>
+<span class="lineno">   4 </span>    <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">   5 </span><span class="attribute">        id</span>=<span class="value">"JcenterRepositoryObsolete"</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:2</span>: <span class="message">Unsupported tag &lt;<code>issues</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">   1 </span><span class="prologue">&lt;?xml version="1.0" encoding="UTF-8"?></span>
+<span class="caretline"><span class="lineno">   2 </span><span class="error"><span class="tag">&lt;issues</span><span class="attribute"> format</span>=<span class="value">"5"</span> <span class="attribute">by</span>=<span class="value">"lint Jellyfish | 2023.3.1"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">   3 </span>
+<span class="lineno">   4 </span>    <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">   5 </span><span class="attribute">        id</span>=<span class="value">"JcenterRepositoryObsolete"</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:6</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">   3 </span>
+<span class="lineno">   4 </span>  <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">   5 </span><span class="attribute">      id</span>=<span class="value">"JcenterRepositoryObsolete"</span>
+<span class="caretline"><span class="lineno">   6 </span><span class="error">      <span class="attribute">message</span>=<span class="value">"JCenter Maven repository is no longer receiving updates: newer library versions may be available elsewhere"</span>></span></span>
+<span class="lineno">   7 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">   8 </span><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">   9 </span>  <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:6</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">   3 </span>
+<span class="lineno">   4 </span>  <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">   5 </span><span class="attribute">      id</span>=<span class="value">"JcenterRepositoryObsolete"</span>
+<span class="caretline"><span class="lineno">   6 </span><span class="error">      <span class="attribute">message</span>=<span class="value">"JCenter Maven repository is no longer receiving updates: newer library versions may be available elsewhere"</span>></span></span>
+<span class="lineno">   7 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">   8 </span><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">   9 </span>  <span class="tag">&lt;/issue></span></pre>
+
+<button class="mdl-button mdl-js-button mdl-button--primary" id="LintWarningDivLink" onclick="reveal('LintWarningDiv');" />+ 175 More Occurrences...</button>
+<div id="LintWarningDiv" style="display: none">
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:6</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">   3 </span>
+<span class="lineno">   4 </span>  <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">   5 </span><span class="attribute">      id</span>=<span class="value">"JcenterRepositoryObsolete"</span>
+<span class="caretline"><span class="lineno">   6 </span><span class="error">      <span class="attribute">message</span>=<span class="value">"JCenter Maven repository is no longer receiving updates: newer library versions may be available elsewhere"</span>></span></span>
+<span class="lineno">   7 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">   8 </span><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">   9 </span>  <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:8</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">   5 </span><span class="attribute">      id</span>=<span class="value">"JcenterRepositoryObsolete"</span>
+<span class="lineno">   6 </span>      <span class="attribute">message</span>=<span class="value">"JCenter Maven repository is no longer receiving updates: newer library versions may be available elsewhere"</span>>
+<span class="lineno">   7 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">   8 </span><span class="error"><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">   9 </span>  <span class="tag">&lt;/issue></span>
+<span class="lineno">  10 </span>
+<span class="lineno">  11 </span>  <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:8</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">   5 </span><span class="attribute">      id</span>=<span class="value">"JcenterRepositoryObsolete"</span>
+<span class="lineno">   6 </span>      <span class="attribute">message</span>=<span class="value">"JCenter Maven repository is no longer receiving updates: newer library versions may be available elsewhere"</span>>
+<span class="lineno">   7 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">   8 </span><span class="error"><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">   9 </span>  <span class="tag">&lt;/issue></span>
+<span class="lineno">  10 </span>
+<span class="lineno">  11 </span>  <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:8</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">   5 </span><span class="attribute">      id</span>=<span class="value">"JcenterRepositoryObsolete"</span>
+<span class="lineno">   6 </span>      <span class="attribute">message</span>=<span class="value">"JCenter Maven repository is no longer receiving updates: newer library versions may be available elsewhere"</span>>
+<span class="lineno">   7 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">   8 </span><span class="error"><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">   9 </span>  <span class="tag">&lt;/issue></span>
+<span class="lineno">  10 </span>
+<span class="lineno">  11 </span>  <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:13</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  10 </span>
+<span class="lineno">  11 </span>  <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  12 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="caretline"><span class="lineno">  13 </span><span class="error">      <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1"</span>></span></span>
+<span class="lineno">  14 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  15 </span><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">  16 </span>  <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:13</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  10 </span>
+<span class="lineno">  11 </span>  <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  12 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="caretline"><span class="lineno">  13 </span><span class="error">      <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1"</span>></span></span>
+<span class="lineno">  14 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  15 </span><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">  16 </span>  <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:13</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  10 </span>
+<span class="lineno">  11 </span>  <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  12 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="caretline"><span class="lineno">  13 </span><span class="error">      <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1"</span>></span></span>
+<span class="lineno">  14 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  15 </span><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">  16 </span>  <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:15</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  12 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="lineno">  13 </span>      <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1"</span>>
+<span class="lineno">  14 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">  15 </span><span class="error"><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  16 </span>  <span class="tag">&lt;/issue></span>
+<span class="lineno">  17 </span>
+<span class="lineno">  18 </span>  <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:15</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  12 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="lineno">  13 </span>      <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1"</span>>
+<span class="lineno">  14 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">  15 </span><span class="error"><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  16 </span>  <span class="tag">&lt;/issue></span>
+<span class="lineno">  17 </span>
+<span class="lineno">  18 </span>  <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:15</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  12 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="lineno">  13 </span>      <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1"</span>>
+<span class="lineno">  14 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">  15 </span><span class="error"><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  16 </span>  <span class="tag">&lt;/issue></span>
+<span class="lineno">  17 </span>
+<span class="lineno">  18 </span>  <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:20</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  17 </span>
+<span class="lineno">  18 </span>  <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  19 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="caretline"><span class="lineno">  20 </span><span class="error">      <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1"</span>></span></span>
+<span class="lineno">  21 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  22 </span><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">  23 </span>  <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:20</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  17 </span>
+<span class="lineno">  18 </span>  <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  19 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="caretline"><span class="lineno">  20 </span><span class="error">      <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1"</span>></span></span>
+<span class="lineno">  21 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  22 </span><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">  23 </span>  <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:20</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  17 </span>
+<span class="lineno">  18 </span>  <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  19 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="caretline"><span class="lineno">  20 </span><span class="error">      <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1"</span>></span></span>
+<span class="lineno">  21 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  22 </span><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">  23 </span>  <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:22</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  19 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="lineno">  20 </span>      <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1"</span>>
+<span class="lineno">  21 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">  22 </span><span class="error"><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  23 </span>  <span class="tag">&lt;/issue></span>
+<span class="lineno">  24 </span>
+<span class="lineno">  25 </span>  <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:22</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  19 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="lineno">  20 </span>      <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1"</span>>
+<span class="lineno">  21 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">  22 </span><span class="error"><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  23 </span>  <span class="tag">&lt;/issue></span>
+<span class="lineno">  24 </span>
+<span class="lineno">  25 </span>  <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:22</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  19 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="lineno">  20 </span>      <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1"</span>>
+<span class="lineno">  21 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">  22 </span><span class="error"><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  23 </span>  <span class="tag">&lt;/issue></span>
+<span class="lineno">  24 </span>
+<span class="lineno">  25 </span>  <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:27</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  24 </span>
+<span class="lineno">  25 </span>    <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  26 </span><span class="attribute">        id</span>=<span class="value">"GradleDependency"</span>
+<span class="caretline"><span class="lineno">  27 </span><span class="error">        <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  28 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  29 </span><span class="attribute">            file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">  30 </span>    <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:27</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  24 </span>
+<span class="lineno">  25 </span>    <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  26 </span><span class="attribute">        id</span>=<span class="value">"GradleDependency"</span>
+<span class="caretline"><span class="lineno">  27 </span><span class="error">        <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  28 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  29 </span><span class="attribute">            file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">  30 </span>    <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:27</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  24 </span>
+<span class="lineno">  25 </span>    <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  26 </span><span class="attribute">        id</span>=<span class="value">"GradleDependency"</span>
+<span class="caretline"><span class="lineno">  27 </span><span class="error">        <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  28 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  29 </span><span class="attribute">            file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">  30 </span>    <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:29</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  26 </span><span class="attribute">        id</span>=<span class="value">"GradleDependency"</span>
+<span class="lineno">  27 </span>        <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1"</span>>
+<span class="lineno">  28 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">  29 </span><span class="error"><span class="attribute">            file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  30 </span>    <span class="tag">&lt;/issue></span>
+<span class="lineno">  31 </span>
+<span class="lineno">  32 </span>    <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:29</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  26 </span><span class="attribute">        id</span>=<span class="value">"GradleDependency"</span>
+<span class="lineno">  27 </span>        <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1"</span>>
+<span class="lineno">  28 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">  29 </span><span class="error"><span class="attribute">            file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  30 </span>    <span class="tag">&lt;/issue></span>
+<span class="lineno">  31 </span>
+<span class="lineno">  32 </span>    <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:29</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  26 </span><span class="attribute">        id</span>=<span class="value">"GradleDependency"</span>
+<span class="lineno">  27 </span>        <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1"</span>>
+<span class="lineno">  28 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">  29 </span><span class="error"><span class="attribute">            file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  30 </span>    <span class="tag">&lt;/issue></span>
+<span class="lineno">  31 </span>
+<span class="lineno">  32 </span>    <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:34</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  31 </span>
+<span class="lineno">  32 </span>    <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  33 </span><span class="attribute">        id</span>=<span class="value">"GradleDependency"</span>
+<span class="caretline"><span class="lineno">  34 </span><span class="error">        <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  35 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  36 </span><span class="attribute">            file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">  37 </span>    <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:34</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  31 </span>
+<span class="lineno">  32 </span>    <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  33 </span><span class="attribute">        id</span>=<span class="value">"GradleDependency"</span>
+<span class="caretline"><span class="lineno">  34 </span><span class="error">        <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  35 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  36 </span><span class="attribute">            file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">  37 </span>    <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:34</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  31 </span>
+<span class="lineno">  32 </span>    <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  33 </span><span class="attribute">        id</span>=<span class="value">"GradleDependency"</span>
+<span class="caretline"><span class="lineno">  34 </span><span class="error">        <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  35 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  36 </span><span class="attribute">            file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">  37 </span>    <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:36</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  33 </span><span class="attribute">        id</span>=<span class="value">"GradleDependency"</span>
+<span class="lineno">  34 </span>        <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1"</span>>
+<span class="lineno">  35 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">  36 </span><span class="error"><span class="attribute">            file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  37 </span>    <span class="tag">&lt;/issue></span>
+<span class="lineno">  38 </span>
+<span class="lineno">  39 </span>    <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:36</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  33 </span><span class="attribute">        id</span>=<span class="value">"GradleDependency"</span>
+<span class="lineno">  34 </span>        <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1"</span>>
+<span class="lineno">  35 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">  36 </span><span class="error"><span class="attribute">            file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  37 </span>    <span class="tag">&lt;/issue></span>
+<span class="lineno">  38 </span>
+<span class="lineno">  39 </span>    <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:36</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  33 </span><span class="attribute">        id</span>=<span class="value">"GradleDependency"</span>
+<span class="lineno">  34 </span>        <span class="attribute">message</span>=<span class="value">"A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1"</span>>
+<span class="lineno">  35 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">  36 </span><span class="error"><span class="attribute">            file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  37 </span>    <span class="tag">&lt;/issue></span>
+<span class="lineno">  38 </span>
+<span class="lineno">  39 </span>    <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:41</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  38 </span>
+<span class="lineno">  39 </span>  <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  40 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="caretline"><span class="lineno">  41 </span><span class="error">      <span class="attribute">message</span>=<span class="value">"A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.8.22 is available: 1.9.23"</span>></span></span>
+<span class="lineno">  42 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  43 </span><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">  44 </span>  <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:41</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  38 </span>
+<span class="lineno">  39 </span>  <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  40 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="caretline"><span class="lineno">  41 </span><span class="error">      <span class="attribute">message</span>=<span class="value">"A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.8.22 is available: 1.9.23"</span>></span></span>
+<span class="lineno">  42 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  43 </span><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">  44 </span>  <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:41</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  38 </span>
+<span class="lineno">  39 </span>  <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  40 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="caretline"><span class="lineno">  41 </span><span class="error">      <span class="attribute">message</span>=<span class="value">"A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.8.22 is available: 1.9.23"</span>></span></span>
+<span class="lineno">  42 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  43 </span><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/>
+<span class="lineno">  44 </span>  <span class="tag">&lt;/issue></span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:43</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  40 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="lineno">  41 </span>      <span class="attribute">message</span>=<span class="value">"A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.8.22 is available: 1.9.23"</span>>
+<span class="lineno">  42 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">  43 </span><span class="error"><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  44 </span>  <span class="tag">&lt;/issue></span>
+<span class="lineno">  45 </span>
+<span class="lineno">  46 </span>  <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:43</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  40 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="lineno">  41 </span>      <span class="attribute">message</span>=<span class="value">"A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.8.22 is available: 1.9.23"</span>>
+<span class="lineno">  42 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">  43 </span><span class="error"><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  44 </span>  <span class="tag">&lt;/issue></span>
+<span class="lineno">  45 </span>
+<span class="lineno">  46 </span>  <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:43</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  40 </span><span class="attribute">      id</span>=<span class="value">"GradleDependency"</span>
+<span class="lineno">  41 </span>      <span class="attribute">message</span>=<span class="value">"A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.8.22 is available: 1.9.23"</span>>
+<span class="lineno">  42 </span>      <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">  43 </span><span class="error"><span class="attribute">          file</span>=<span class="value">"build.gradle"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  44 </span>  <span class="tag">&lt;/issue></span>
+<span class="lineno">  45 </span>
+<span class="lineno">  46 </span>  <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:48</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  45 </span>
+<span class="lineno">  46 </span>    <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  47 </span><span class="attribute">        id</span>=<span class="value">"UnusedResources"</span>
+<span class="caretline"><span class="lineno">  48 </span><span class="error">        <span class="attribute">message</span>=<span class="value">"The resource `R.color.black` appears to be unused"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  49 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  50 </span><span class="attribute">            file</span>=<span class="value">"src/main/res/values/colors.xml"</span>
+<span class="lineno">  51 </span>            <span class="attribute">line</span>=<span class="value">"3"</span>/>
+</pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:48</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  45 </span>
+<span class="lineno">  46 </span>    <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  47 </span><span class="attribute">        id</span>=<span class="value">"UnusedResources"</span>
+<span class="caretline"><span class="lineno">  48 </span><span class="error">        <span class="attribute">message</span>=<span class="value">"The resource `R.color.black` appears to be unused"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  49 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  50 </span><span class="attribute">            file</span>=<span class="value">"src/main/res/values/colors.xml"</span>
+<span class="lineno">  51 </span>            <span class="attribute">line</span>=<span class="value">"3"</span>/>
+</pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:48</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  45 </span>
+<span class="lineno">  46 </span>    <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  47 </span><span class="attribute">        id</span>=<span class="value">"UnusedResources"</span>
+<span class="caretline"><span class="lineno">  48 </span><span class="error">        <span class="attribute">message</span>=<span class="value">"The resource `R.color.black` appears to be unused"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  49 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  50 </span><span class="attribute">            file</span>=<span class="value">"src/main/res/values/colors.xml"</span>
+<span class="lineno">  51 </span>            <span class="attribute">line</span>=<span class="value">"3"</span>/>
+</pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:51</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  48 </span>        <span class="attribute">message</span>=<span class="value">"The resource `R.color.black` appears to be unused"</span>>
+<span class="lineno">  49 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  50 </span><span class="attribute">            file</span>=<span class="value">"src/main/res/values/colors.xml"</span>
+<span class="caretline"><span class="lineno">  51 </span><span class="error">            <span class="attribute">line</span>=<span class="value">"3"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  52 </span>    <span class="tag">&lt;/issue></span>
+<span class="lineno">  53 </span>
+<span class="lineno">  54 </span>    <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:51</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  48 </span>        <span class="attribute">message</span>=<span class="value">"The resource `R.color.black` appears to be unused"</span>>
+<span class="lineno">  49 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  50 </span><span class="attribute">            file</span>=<span class="value">"src/main/res/values/colors.xml"</span>
+<span class="caretline"><span class="lineno">  51 </span><span class="error">            <span class="attribute">line</span>=<span class="value">"3"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  52 </span>    <span class="tag">&lt;/issue></span>
+<span class="lineno">  53 </span>
+<span class="lineno">  54 </span>    <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:51</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  48 </span>        <span class="attribute">message</span>=<span class="value">"The resource `R.color.black` appears to be unused"</span>>
+<span class="lineno">  49 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  50 </span><span class="attribute">            file</span>=<span class="value">"src/main/res/values/colors.xml"</span>
+<span class="caretline"><span class="lineno">  51 </span><span class="error">            <span class="attribute">line</span>=<span class="value">"3"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  52 </span>    <span class="tag">&lt;/issue></span>
+<span class="lineno">  53 </span>
+<span class="lineno">  54 </span>    <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:56</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  53 </span>
+<span class="lineno">  54 </span>    <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  55 </span><span class="attribute">        id</span>=<span class="value">"UnusedResources"</span>
+<span class="caretline"><span class="lineno">  56 </span><span class="error">        <span class="attribute">message</span>=<span class="value">"The resource `R.color.black` appears to be unused"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  57 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  58 </span><span class="attribute">            file</span>=<span class="value">"src/main/res/values/colors.xml"</span>
+<span class="lineno">  59 </span>            <span class="attribute">line</span>=<span class="value">"3"</span>/>
+</pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:56</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  53 </span>
+<span class="lineno">  54 </span>    <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  55 </span><span class="attribute">        id</span>=<span class="value">"UnusedResources"</span>
+<span class="caretline"><span class="lineno">  56 </span><span class="error">        <span class="attribute">message</span>=<span class="value">"The resource `R.color.black` appears to be unused"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  57 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  58 </span><span class="attribute">            file</span>=<span class="value">"src/main/res/values/colors.xml"</span>
+<span class="lineno">  59 </span>            <span class="attribute">line</span>=<span class="value">"3"</span>/>
+</pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:56</span>: <span class="message">Unexpected attribute <code>message</code>, expected <code>id</code>, <code>in</code> or <code>severity</code></span><br /><pre class="errorlines">
+<span class="lineno">  53 </span>
+<span class="lineno">  54 </span>    <span class="tag">&lt;issue</span><span class="attribute">
+</span><span class="lineno">  55 </span><span class="attribute">        id</span>=<span class="value">"UnusedResources"</span>
+<span class="caretline"><span class="lineno">  56 </span><span class="error">        <span class="attribute">message</span>=<span class="value">"The resource `R.color.black` appears to be unused"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  57 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  58 </span><span class="attribute">            file</span>=<span class="value">"src/main/res/values/colors.xml"</span>
+<span class="lineno">  59 </span>            <span class="attribute">line</span>=<span class="value">"3"</span>/>
+</pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:59</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  56 </span>        <span class="attribute">message</span>=<span class="value">"The resource `R.color.black` appears to be unused"</span>>
+<span class="lineno">  57 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  58 </span><span class="attribute">            file</span>=<span class="value">"src/main/res/values/colors.xml"</span>
+<span class="caretline"><span class="lineno">  59 </span><span class="error">            <span class="attribute">line</span>=<span class="value">"3"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  60 </span>    <span class="tag">&lt;/issue></span>
+<span class="lineno">  61 </span>
+<span class="lineno">  62 </span>    <span class="tag">&lt;issue</span></pre>
+
+<span class="location"><a href="../../lint.xml">../../lint.xml</a>:59</span>: <span class="message">Unsupported tag &lt;<code>location</code>>, expected one of <code>lint</code>, <code>issue</code>, <code>ignore</code> or <code>option</code></span><br /><pre class="errorlines">
+<span class="lineno">  56 </span>        <span class="attribute">message</span>=<span class="value">"The resource `R.color.black` appears to be unused"</span>>
+<span class="lineno">  57 </span>        <span class="tag">&lt;location</span><span class="attribute">
+</span><span class="lineno">  58 </span><span class="attribute">            file</span>=<span class="value">"src/main/res/values/colors.xml"</span>
+<span class="caretline"><span class="lineno">  59 </span><span class="error">            <span class="attribute">line</span>=<span class="value">"3"</span>/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  60 </span>    <span class="tag">&lt;/issue></span>
+<span class="lineno">  61 </span>
+<span class="lineno">  62 </span>    <span class="tag">&lt;issue</span></pre>
+
+<br/><b>NOTE: 130 results omitted.</b><br/><br/></div>
+</div>
+<div class="metadata"><div class="explanation" id="explanationLintWarning" style="display: none;">
+This issue type represents a problem running lint itself. Examples include unsupported tags in configuration files, etc.<br/>
+<br/>
+These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed.<br/>To suppress this error, use the issue id "LintWarning" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">LintWarning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Error</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 5/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationLintWarningLink" onclick="reveal('explanationLintWarning');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="LintWarningCardLink" onclick="hideid('LintWarningCard');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Performance"></a>
+<a name="UnusedResources"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="UnusedResourcesCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Unused resources</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/drawable/custom_button_background.xml">../../src/main/res/drawable/custom_button_background.xml</a>:2</span>: <span class="message">The resource <code>R.drawable.custom_button_background</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span><span class="prologue">&lt;?xml version="1.0" encoding="utf-8"?></span>
+<span class="caretline"><span class="lineno">  2 </span><span class="error"><span class="tag">&lt;selector</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  3 </span>    <span class="tag">&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">state_enabled</span>=<span class="value">"true"</span>>
+<span class="lineno">  4 </span>        <span class="tag">&lt;shape</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">shape</span>=<span class="value">"rectangle"</span>>
+<span class="lineno">  5 </span>            <span class="tag">&lt;corners</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">radius</span>=<span class="value">"20dp"</span> />
+</pre>
+
+<span class="location"><a href="../../src/main/res/layout/fragment_item_list.xml">../../src/main/res/layout/fragment_item_list.xml</a>:2</span>: <span class="message">The resource <code>R.layout.fragment_item_list</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span><span class="prologue">&lt;?xml version="1.0" encoding="utf-8"?></span>
+<span class="caretline"><span class="lineno">  2 </span><span class="error"><span class="tag">&lt;androidx.constraintlayout.widget.ConstraintLayout</span><span class="attribute"></span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute">
+</span><span class="lineno">  3 </span><span class="attribute">    </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>
+<span class="lineno">  4 </span>    <span class="prefix">xmlns:</span><span class="attribute">app</span>=<span class="value">"http://schemas.android.com/apk/res-auto"</span>
+<span class="lineno">  5 </span>    <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"match_parent"</span>
+</pre>
+
+<span class="location"><a href="../../src/main/res/drawable/ic_favorite.xml">../../src/main/res/drawable/ic_favorite.xml</a>:2</span>: <span class="message">The resource <code>R.drawable.ic_favorite</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span><span class="prologue">&lt;?xml version="1.0" encoding="utf-8"?></span>
+<span class="caretline"><span class="lineno">  2 </span><span class="error"><span class="tag">&lt;selector</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  3 </span>    <span class="tag">&lt;vector</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>
+<span class="lineno">  4 </span>        <span class="prefix">android:</span><span class="attribute">width</span>=<span class="value">"24dp"</span>
+<span class="lineno">  5 </span>        <span class="prefix">android:</span><span class="attribute">height</span>=<span class="value">"24dp"</span>
+</pre>
+
+<span class="location"><a href="../../src/main/res/navigation/nav_graph_main.xml">../../src/main/res/navigation/nav_graph_main.xml</a>:1</span>: <span class="message">The resource <code>R.navigation.nav_graph_main</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="caretline"><span class="lineno">  1 </span><span class="error"><span class="tag">&lt;navigation</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  2 </span>    <span class="prefix">xmlns:</span><span class="attribute">app</span>=<span class="value">"http://schemas.android.com/apk/res-auto"</span>
+<span class="lineno">  3 </span>    <span class="prefix">xmlns:</span><span class="attribute">tools</span>=<span class="value">"http://schemas.android.com/tools"</span>
+<span class="lineno">  4 </span>    <span class="prefix">app:</span><span class="attribute">startDestination</span>=<span class="value">"@id/mainFragment"</span>>
+</pre>
+
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:3</span>: <span class="message">The resource <code>R.array.blur_levels</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno"> 1 </span><span class="tag">&lt;resources></span>
+<span class="lineno"> 2 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"app_name"</span>>drakor<span class="tag">&lt;/string></span>
+<span class="caretline"><span class="lineno"> 3 </span>    <span class="tag">&lt;string-array</span><span class="attribute"> </span><span class="error"><span class="attribute">name</span>=<span class="value">"blur_levels"</span></span>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 4 </span>        <span class="tag">&lt;item></span>Low<span class="tag">&lt;/item></span>
+<span class="lineno"> 5 </span>        <span class="tag">&lt;item></span>Medium<span class="tag">&lt;/item></span>
+<span class="lineno"> 6 </span>        <span class="tag">&lt;item></span>High<span class="tag">&lt;/item></span>
+</pre>
+
+<button class="mdl-button mdl-js-button mdl-button--primary" id="UnusedResourcesDivLink" onclick="reveal('UnusedResourcesDiv');" />+ 4 More Occurrences...</button>
+<div id="UnusedResourcesDiv" style="display: none">
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:8</span>: <span class="message">The resource <code>R.string.change_profile_picture</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno"> 5 </span>        <span class="tag">&lt;item></span>Medium<span class="tag">&lt;/item></span>
+<span class="lineno"> 6 </span>        <span class="tag">&lt;item></span>High<span class="tag">&lt;/item></span>
+<span class="lineno"> 7 </span>    <span class="tag">&lt;/string-array></span>
+<span class="caretline"><span class="lineno"> 8 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="error"><span class="attribute">name</span>=<span class="value">"change_profile_picture"</span></span>>Change Profile Picture<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 9 </span><span class="tag">&lt;/resources></span></pre>
+
+<span class="location"><a href="../../src/main/res/values/style.xml">../../src/main/res/values/style.xml</a>:3</span>: <span class="message">The resource <code>R.style.ButtonStyle</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span><span class="prologue">&lt;?xml version="1.0" encoding="utf-8"?></span>
+<span class="lineno">  2 </span><span class="tag">&lt;resources></span>
+<span class="caretline"><span class="lineno">  3 </span>    <span class="tag">&lt;style</span><span class="attribute"> </span><span class="error"><span class="attribute">name</span>=<span class="value">"ButtonStyle"</span></span>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  4 </span>        <span class="tag">&lt;item</span><span class="attribute"> name</span>=<span class="value">"android:background"</span>>@drawable/custom_button_background<span class="tag">&lt;/item></span>
+<span class="lineno">  5 </span>        <span class="tag">&lt;item</span><span class="attribute"> name</span>=<span class="value">"android:textColor"</span>>#FFCAD4<span class="tag">&lt;/item></span>
+<span class="lineno">  6 </span>        <span class="tag">&lt;item</span><span class="attribute"> name</span>=<span class="value">"android:radius"</span>>15dp<span class="tag">&lt;/item></span>
+</pre>
+
+<span class="location"><a href="../../src/main/res/values/style.xml">../../src/main/res/values/style.xml</a>:10</span>: <span class="message">The resource <code>R.style.logo</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  7 </span>        <span class="tag">&lt;item</span><span class="attribute"> name</span>=<span class="value">"android:fontFamily"</span>>@font/poppinsreguler<span class="tag">&lt;/item></span>
+<span class="lineno">  8 </span>        <span class="tag">&lt;item</span><span class="attribute"> name</span>=<span class="value">"android:textSize"</span>>20dp<span class="tag">&lt;/item></span>
+<span class="lineno">  9 </span>    <span class="tag">&lt;/style></span>
+<span class="caretline"><span class="lineno"> 10 </span>    <span class="tag">&lt;style</span><span class="attribute"> </span><span class="error"><span class="attribute">name</span>=<span class="value">"logo"</span></span>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 11 </span>        <span class="tag">&lt;item</span><span class="attribute"> name</span>=<span class="value">"android:layout_height"</span>>120dp<span class="tag">&lt;/item></span>
+<span class="lineno"> 12 </span>        <span class="tag">&lt;item</span><span class="attribute"> name</span>=<span class="value">"android:layout_width"</span>>120dp<span class="tag">&lt;/item></span>
+<span class="lineno"> 13 </span>    <span class="tag">&lt;/style></span>
+</pre>
+
+<span class="location"><a href="../../src/main/res/values/style.xml">../../src/main/res/values/style.xml</a>:21</span>: <span class="message">The resource <code>R.style.fontStyle</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno"> 18 </span>        <span class="tag">&lt;item</span><span class="attribute"> name</span>=<span class="value">"android:fontFamily"</span>>@font/naturebeauty<span class="tag">&lt;/item></span>
+<span class="lineno"> 19 </span>    <span class="tag">&lt;/style></span>
+<span class="lineno"> 20 </span>    
+<span class="caretline"><span class="lineno"> 21 </span>    <span class="tag">&lt;style</span><span class="attribute"> </span><span class="error"><span class="attribute">name</span>=<span class="value">"fontStyle"</span></span>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 22 </span>        <span class="tag">&lt;item</span><span class="attribute"> name</span>=<span class="value">"android:fontFamily"</span>>@font/poppinsreguler<span class="tag">&lt;/item></span>
+<span class="lineno"> 23 </span>        <span class="tag">&lt;item</span><span class="attribute"> name</span>=<span class="value">"android:textSize"</span>>15dp<span class="tag">&lt;/item></span>
+<span class="lineno"> 24 </span>        <span class="tag">&lt;item</span><span class="attribute"> name</span>=<span class="value">"android:textColor"</span>>@color/black<span class="tag">&lt;/item></span>
+</pre>
+
+</div>
+</div>
+<div class="metadata"><div class="explanation" id="explanationUnusedResources" style="display: none;">
+Unused resources make applications larger and slow down builds.<br/>
+<br/>
+<br/>
+The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.<br/>
+<br/>
+You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.<br/>
+,<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "UnusedResources" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">UnusedResources</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Performance</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Error</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 3/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationUnusedResourcesLink" onclick="reveal('explanationUnusedResources');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="UnusedResourcesCardLink" onclick="hideid('UnusedResourcesCard');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="SuppressInfo"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="SuppressCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Suppressing Warnings and Errors</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+Lint errors can be suppressed in a variety of ways:<br/>
+<br/>
+1. With a <code>@SuppressLint</code> annotation in the Java code<br/>
+2. With a <code>tools:ignore</code> attribute in the XML file<br/>
+3. With a //noinspection comment in the source code<br/>
+4. With ignore flags specified in the <code>build.gradle</code> file, as explained below<br/>
+5. With a <code>lint.xml</code> configuration file in the project<br/>
+6. With a <code>lint.xml</code> configuration file passed to lint via the --config flag<br/>
+7. With the --ignore flag passed to lint.<br/>
+<br/>
+To suppress a lint warning with an annotation, add a <code>@SuppressLint("id")</code> annotation on the class, method or variable declaration closest to the warning instance you want to disable. The id can be one or more issue id's, such as <code>"UnusedResources"</code> or <code>{"UnusedResources","UnusedIds"}</code>, or it can be <code>"all"</code> to suppress all lint warnings in the given scope.<br/>
+<br/>
+To suppress a lint warning with a comment, add a <code>//noinspection id</code> comment on the line before the statement with the error.<br/>
+<br/>
+To suppress a lint warning in an XML file, add a <code>tools:ignore="id"</code> attribute on the element containing the error, or one of its surrounding elements. You also need to define the namespace for the tools prefix on the root element in your document, next to the <code>xmlns:android</code> declaration:<br/>
+<code>xmlns:tools="http://schemas.android.com/tools"</code><br/>
+<br/>
+To suppress a lint warning in a <code>build.gradle</code> file, add a section like this:<br/>
+
+<pre>
+android {
+    lintOptions {
+        disable 'TypographyFractions','TypographyQuotes'
+    }
+}
+</pre>
+<br/>
+Here we specify a comma separated list of issue id's after the disable command. You can also use <code>warning</code> or <code>error</code> instead of <code>disable</code> to change the severity of issues.<br/>
+<br/>
+To suppress lint warnings with a configuration XML file, create a file named <code>lint.xml</code> and place it at the root directory of the module in which it applies.<br/>
+<br/>
+The format of the <code>lint.xml</code> file is something like the following:<br/>
+
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;lint>
+    &lt;!-- Ignore everything in the test source set -->
+    &lt;issue id="all">
+        &lt;ignore path="\*/test/\*" />
+    &lt;/issue>
+
+    &lt;!-- Disable this given check in this project -->
+    &lt;issue id="IconMissingDensityFolder" severity="ignore" />
+
+    &lt;!-- Ignore the ObsoleteLayoutParam issue in the given files -->
+    &lt;issue id="ObsoleteLayoutParam">
+        &lt;ignore path="res/layout/activation.xml" />
+        &lt;ignore path="res/layout-xlarge/activation.xml" />
+        &lt;ignore regexp="(foo|bar)\.java" />
+    &lt;/issue>
+
+    &lt;!-- Ignore the UselessLeaf issue in the given file -->
+    &lt;issue id="UselessLeaf">
+        &lt;ignore path="res/layout/main.xml" />
+    &lt;/issue>
+
+    &lt;!-- Change the severity of hardcoded strings to "error" -->
+    &lt;issue id="HardcodedText" severity="error" />
+&lt;/lint>
+</pre>
+<br/>
+To suppress lint checks from the command line, pass the --ignore flag with a comma separated list of ids to be suppressed, such as:<br/>
+<code>$ lint --ignore UnusedResources,UselessLeaf /my/project/path</code><br/>
+<br/>
+For more information, see <a href="https://developer.android.com/studio/write/lint.html#config">https://developer.android.com/studio/write/lint.html#config</a><br/>
+
+            </div>
+            </div>
+          </section>    </div>
+  </main>
+</div>
+</body>
+</html>
