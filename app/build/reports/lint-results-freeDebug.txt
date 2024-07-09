@@ -1,3 +1,4 @@
+D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint-baseline.xml: Information: 9 errors were filtered out because they are listed in the baseline file, lint-baseline.xml [LintBaseline]
 D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml:2: Error: Unsupported tag <issues>, expected one of lint, issue, ignore or option [LintWarning]
 <issues format="5" by="lint Jellyfish | 2023.3.1">
 ^
@@ -538,46 +539,4 @@ D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml:167: Warning: 
 D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml:169: Warning: Unsupported tag <location>, expected one of lint, issue, ignore or option [LintWarning]
             file="build.gradle"/>
             ^
-D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\drawable\custom_button_background.xml:2: Error: The resource R.drawable.custom_button_background appears to be unused [UnusedResources]
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-^
-D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\layout\fragment_item_list.xml:2: Error: The resource R.layout.fragment_item_list appears to be unused [UnusedResources]
-<androidx.constraintlayout.widget.ConstraintLayout
-^
-D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\drawable\ic_favorite.xml:2: Error: The resource R.drawable.ic_favorite appears to be unused [UnusedResources]
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-^
-D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\navigation\nav_graph_main.xml:1: Error: The resource R.navigation.nav_graph_main appears to be unused [UnusedResources]
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
-^
-D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\values\strings.xml:3: Error: The resource R.array.blur_levels appears to be unused [UnusedResources]
-    <string-array name="blur_levels">
-                  ~~~~~~~~~~~~~~~~~~
-D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\values\strings.xml:8: Error: The resource R.string.change_profile_picture appears to be unused [UnusedResources]
-    <string name="change_profile_picture">Change Profile Picture</string>
-            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\values\style.xml:3: Error: The resource R.style.ButtonStyle appears to be unused [UnusedResources]
-    <style name="ButtonStyle">
-           ~~~~~~~~~~~~~~~~~~
-D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\values\style.xml:10: Error: The resource R.style.logo appears to be unused [UnusedResources]
-    <style name="logo">
-           ~~~~~~~~~~~
-D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\values\style.xml:21: Error: The resource R.style.fontStyle appears to be unused [UnusedResources]
-    <style name="fontStyle">
-           ~~~~~~~~~~~~~~~~
-
-   Explanation for issues of type "UnusedResources":
-   Unused resources make applications larger and slow down builds.
-
-
-   The unused resource check can ignore tests. If you want to include
-   resources that are only referenced from tests, consider packaging them in a
-   test source set instead.
-
-   You can include test sources in the unused resource check by setting the
-   system property lint.unused-resources.include-tests =true, and to exclude
-   them (usually for performance reasons), use
-   lint.unused-resources.exclude-tests =true.
-   ,
-
-144 errors, 45 warnings
+135 errors, 45 warnings (9 errors filtered by baseline lint-baseline.xml)
