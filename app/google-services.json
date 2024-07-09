@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "442432822918",
+    "project_id": "drakor-9021c",
+    "storage_bucket": "drakor-9021c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442432822918:android:fce1b5fc8747eaa816fb07",
+        "android_client_info": {
+          "package_name": "com.belajar.drakor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl6glikTwhx4NMY3hksDyoRxIJexu8jcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
