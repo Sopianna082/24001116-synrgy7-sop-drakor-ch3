@@ -2,6 +2,18 @@
 <issues format="6" by="lint 8.4.0">
 
     <issue
+        id="LintBaseline"
+        severity="Information"
+        message="9 errors were filtered out because they are listed in the baseline file, lint-baseline.xml"
+        category="Lint"
+        priority="10"
+        summary="Baseline Applied"
+        explanation="Lint can be configured with a &quot;baseline&quot;; a set of current issues found in a codebase, which future runs of lint will silently ignore. Only new issues not found in the baseline are reported.&#xA;&#xA;Note that while opening files in the IDE, baseline issues are not filtered out; the purpose of baselines is to allow you to get started using lint and break the build on all newly introduced errors, without having to go back and fix the entire codebase up front. However, when you open up existing files you still want to be aware of and fix issues as you come across them.&#xA;&#xA;This issue type is used to emit an informational-only warning if any issues were filtered out due to baseline matching. That way, you don&apos;t have a false sense of security if you forgot that you&apos;ve checked in a baseline file.">
+        <location
+            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint-baseline.xml"/>
+    </issue>
+
+    <issue
         id="LintWarning"
         severity="Error"
         message="Unsupported tag &lt;`issues`>, expected one of `lint`, `issue`, `ignore` or `option`"
@@ -2699,150 +2711,6 @@
         <location
             file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\lint.xml"
             line="169"/>
-    </issue>
-
-    <issue
-        id="UnusedResources"
-        severity="Error"
-        message="The resource `R.drawable.custom_button_background` appears to be unused"
-        category="Performance"
-        priority="3"
-        summary="Unused resources"
-        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
-        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
-        errorLine2="^">
-        <location
-            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\drawable\custom_button_background.xml"
-            line="2"
-            column="1"/>
-    </issue>
-
-    <issue
-        id="UnusedResources"
-        severity="Error"
-        message="The resource `R.layout.fragment_item_list` appears to be unused"
-        category="Performance"
-        priority="3"
-        summary="Unused resources"
-        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
-        errorLine1="&lt;androidx.constraintlayout.widget.ConstraintLayout"
-        errorLine2="^">
-        <location
-            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\layout\fragment_item_list.xml"
-            line="2"
-            column="1"/>
-    </issue>
-
-    <issue
-        id="UnusedResources"
-        severity="Error"
-        message="The resource `R.drawable.ic_favorite` appears to be unused"
-        category="Performance"
-        priority="3"
-        summary="Unused resources"
-        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
-        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
-        errorLine2="^">
-        <location
-            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\drawable\ic_favorite.xml"
-            line="2"
-            column="1"/>
-    </issue>
-
-    <issue
-        id="UnusedResources"
-        severity="Error"
-        message="The resource `R.navigation.nav_graph_main` appears to be unused"
-        category="Performance"
-        priority="3"
-        summary="Unused resources"
-        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
-        errorLine1="&lt;navigation xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
-        errorLine2="^">
-        <location
-            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\navigation\nav_graph_main.xml"
-            line="1"
-            column="1"/>
-    </issue>
-
-    <issue
-        id="UnusedResources"
-        severity="Error"
-        message="The resource `R.array.blur_levels` appears to be unused"
-        category="Performance"
-        priority="3"
-        summary="Unused resources"
-        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
-        errorLine1="    &lt;string-array name=&quot;blur_levels&quot;>"
-        errorLine2="                  ~~~~~~~~~~~~~~~~~~">
-        <location
-            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\values\strings.xml"
-            line="3"
-            column="19"/>
-    </issue>
-
-    <issue
-        id="UnusedResources"
-        severity="Error"
-        message="The resource `R.string.change_profile_picture` appears to be unused"
-        category="Performance"
-        priority="3"
-        summary="Unused resources"
-        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
-        errorLine1="    &lt;string name=&quot;change_profile_picture&quot;>Change Profile Picture&lt;/string>"
-        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\values\strings.xml"
-            line="8"
-            column="13"/>
-    </issue>
-
-    <issue
-        id="UnusedResources"
-        severity="Error"
-        message="The resource `R.style.ButtonStyle` appears to be unused"
-        category="Performance"
-        priority="3"
-        summary="Unused resources"
-        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
-        errorLine1="    &lt;style name=&quot;ButtonStyle&quot;>"
-        errorLine2="           ~~~~~~~~~~~~~~~~~~">
-        <location
-            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\values\style.xml"
-            line="3"
-            column="12"/>
-    </issue>
-
-    <issue
-        id="UnusedResources"
-        severity="Error"
-        message="The resource `R.style.logo` appears to be unused"
-        category="Performance"
-        priority="3"
-        summary="Unused resources"
-        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
-        errorLine1="    &lt;style name=&quot;logo&quot;>"
-        errorLine2="           ~~~~~~~~~~~">
-        <location
-            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\values\style.xml"
-            line="10"
-            column="12"/>
-    </issue>
-
-    <issue
-        id="UnusedResources"
-        severity="Error"
-        message="The resource `R.style.fontStyle` appears to be unused"
-        category="Performance"
-        priority="3"
-        summary="Unused resources"
-        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
-        errorLine1="    &lt;style name=&quot;fontStyle&quot;>"
-        errorLine2="           ~~~~~~~~~~~~~~~~">
-        <location
-            file="D:\Semester 8\SYNRGY\24001116-synrgy7-sop-drakor-ch3\app\src\main\res\values\style.xml"
-            line="21"
-            column="12"/>
     </issue>
 
 </issues>
