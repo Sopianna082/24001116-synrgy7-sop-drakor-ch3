@@ -148,4 +148,8 @@ dependencies {
     // Chucker
     debugImplementation 'com.github.chuckerteam.chucker:library:3.5.2'
     releaseImplementation 'com.github.chuckerteam.chucker:library-no-op:3.5.2'
+
+    //firebase
+    implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
+    implementation("com.google.firebase:firebase-analytics")
 }
